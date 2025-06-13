@@ -7,7 +7,457 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 21:27:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 21:31:57 +0000</lastBuildDate>
+    <item>
+      <title>🟢 macOS Software Update: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ macOS Software Update is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">macOS Software Update-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Mac App Store: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Mac App Store is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Mac App Store-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iWork for iCloud: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iWork for iCloud is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iWork for iCloud-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iWork Collaboration: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iWork Collaboration is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iWork Collaboration-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iTunes Store: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iTunes Store is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iTunes Store-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iTunes Match: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iTunes Match is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iTunes Match-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iOS Device Activation: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iOS Device Activation is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iOS Device Activation-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iMessage: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iMessage is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iMessage-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Web Apps (iCloud.com): Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Web Apps (iCloud.com) is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Web Apps (iCloud.com)-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Storage Upgrades: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Storage Upgrades is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Storage Upgrades-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Reminders: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Reminders is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Reminders-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Private Relay: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Private Relay is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Private Relay-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Notes: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Notes is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Notes-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Mail: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Mail is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Mail-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Keychain: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Keychain is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Keychain-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Drive: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Drive is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Drive-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Bookmarks &amp; Tabs: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Bookmarks &amp; Tabs is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Bookmarks &amp; Tabs-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Backup: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Backup is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Backup-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Account &amp; Sign In: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ iCloud Account &amp; Sign In is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">iCloud Account &amp; Sign In-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 HomeKit Secure Video: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ HomeKit Secure Video is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">HomeKit Secure Video-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 HomeKit: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ HomeKit is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">HomeKit-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Health sharing with provider: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Health sharing with provider is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Health sharing with provider-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Global Service Exchange: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Global Service Exchange is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Global Service Exchange-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Game Center: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Game Center is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Game Center-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Find My: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Find My is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Find My-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 FaceTime: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ FaceTime is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">FaceTime-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Dictation: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Dictation is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Dictation-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 BusinessConnect: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ BusinessConnect is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">BusinessConnect-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Audiobooks: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Audiobooks is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Audiobooks-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 AppleCare on Device: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ AppleCare on Device is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">AppleCare on Device-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple TV+: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple TV+ is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple TV+-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple TV Channels: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple TV Channels is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple TV Channels-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Sports: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Sports is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Sports-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Pay: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Pay is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Pay-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Online Store: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Online Store is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Online Store-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Music Subscriptions: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Music Subscriptions is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Music Subscriptions-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Music radio: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Music radio is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Music radio-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Music Classical: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Music Classical is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Music Classical-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Music: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Music is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Music-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Messages for Business: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Messages for Business is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Messages for Business-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Invites: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Invites is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Invites-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Fitness+: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Fitness+ is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Fitness+-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Cash: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Cash is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Cash-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Card: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Card is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Card-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Business Essentials: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Business Essentials is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Business Essentials-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Books: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Books is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Books-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Arcade: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Arcade is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Arcade-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Account Card: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Account Card is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Account Card-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Account: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Account is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Account-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 App Store: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ App Store is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">App Store-operational-1749850317843</guid>
+      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+    </item>
     <item>
       <title>🟢 iCloud Contacts: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>

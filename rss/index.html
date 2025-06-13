@@ -378,7 +378,7 @@
         // Fetch and display real last updated timestamp from RSS feed
         async function fetchLastUpdated() {
             try {
-                const response = await fetch('all-apple-services.rss');
+                const response = await fetch('general/app-store.rss');
                 const rssText = await response.text();
                 
                 // Parse the XML to get lastBuildDate

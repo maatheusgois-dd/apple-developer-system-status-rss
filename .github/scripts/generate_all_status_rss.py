@@ -115,52 +115,97 @@ def create_aggregate_feed(services, title_suffix, service_type):
     fg.language('en')
     
     all_events = []
+    services_with_events = set()
     
     # Collect all events from all services
     for service in services:
         service_name = service.get('serviceName', 'Unknown Service')
-        for event in service.get('events', []):
-            event_copy = event.copy()
-            event_copy['_serviceName'] = service_name
-            all_events.append(event_copy)
+        events = service.get('events', [])
+        
+        if events:
+            services_with_events.add(service_name)
+            for event in events:
+                event_copy = event.copy()
+                event_copy['_serviceName'] = service_name
+                all_events.append(event_copy)
     
-    # Sort all events by date (newest first)
-    all_events.sort(key=lambda x: x.get('epochStartDate', 0), reverse=True)
+    # Add operational status for services without events
+    now = datetime.datetime.now(timezone.utc)
+    for service in services:
+        service_name = service.get('serviceName', 'Unknown Service')
+        if service_name not in services_with_events:
+            # Create a fake event for operational status
+            operational_event = {
+                '_serviceName': service_name,
+                'messageId': 'operational',
+                'epochStartDate': int(now.timestamp() * 1000),
+                'eventStatus': 'operational',
+                'statusType': 'Operational',
+                'datePosted': now.strftime('%m/%d/%Y %H:%M UTC'),
+                'message': f'All systems operational for {service_name}',
+                'usersAffected': None,
+                'affectedServices': None
+            }
+            all_events.append(operational_event)
     
-    # Limit to last 50 events to keep feed manageable
-    all_events = all_events[:50]
+    # Sort all events by date (newest first), but prioritize non-operational events
+    def sort_key(event):
+        # Non-operational events get priority (lower sort value)
+        priority = 0 if event.get('eventStatus') != 'operational' else 1
+        epoch = event.get('epochStartDate', 0)
+        return (priority, -epoch)
     
-    if all_events:
-        for event in all_events:
-            e = fg.add_entry()
-            service_name = event.get('_serviceName', 'Unknown Service')
-            e.id(f"{service_name}-{event.get('messageId', '')}-{event.get('epochStartDate', '')}")
-            
-            # Create status emoji based on event status
-            status_emoji = "🟢" if event.get('eventStatus') == 'resolved' else "🟠" if event.get('eventStatus') == 'ongoing' else "🔴"
-            status_type = event.get('statusType', 'Issue')
-            event_status = event.get('eventStatus', 'unknown')
-            
-            e.title(f"{status_emoji} {service_name}: {status_type} ({event_status})")
-            e.link(href='https://www.apple.com/support/systemstatus/')
-            
-            # Parse date
-            try:
-                date_str = event.get('datePosted', '')
-                if date_str:
-                    clean_date = date_str.replace(' PDT', '').replace(' PST', '')
-                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
-                else:
-                    epoch_start = event.get('epochStartDate', 0)
-                    dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else datetime.datetime.now(timezone.utc)
-            except Exception:
-                dt = datetime.datetime.now(timezone.utc)
-            
-            e.pubDate(dt)
-            
-            # Build description
-            description_parts = []
-            
+    all_events.sort(key=sort_key)
+    
+    # Limit to reasonable number of entries (recent events + all operational services)
+    # Keep all recent events (non-operational) and up to 50 operational services
+    recent_events = [e for e in all_events if e.get('eventStatus') != 'operational']
+    operational_events = [e for e in all_events if e.get('eventStatus') == 'operational'][:50]
+    all_events = recent_events + operational_events
+    
+    for event in all_events:
+        e = fg.add_entry()
+        service_name = event.get('_serviceName', 'Unknown Service')
+        
+        # Create status emoji based on event status
+        if event.get('eventStatus') == 'operational':
+            status_emoji = "🟢"
+            status_text = "Operational"
+        elif event.get('eventStatus') == 'resolved':
+            status_emoji = "🟢"
+            status_text = f"{event.get('statusType', 'Issue')} (resolved)"
+        elif event.get('eventStatus') == 'ongoing':
+            status_emoji = "🟠"
+            status_text = f"{event.get('statusType', 'Issue')} (ongoing)"
+        else:
+            status_emoji = "🔴"
+            status_text = f"{event.get('statusType', 'Issue')} ({event.get('eventStatus', 'unknown')})"
+        
+        e.title(f"{status_emoji} {service_name}: {status_text}")
+        e.link(href='https://www.apple.com/support/systemstatus/')
+        e.id(f"{service_name}-{event.get('messageId', '')}-{event.get('epochStartDate', '')}")
+        
+        # Parse date
+        try:
+            date_str = event.get('datePosted', '')
+            if date_str:
+                clean_date = date_str.replace(' PDT', '').replace(' PST', '').replace(' UTC', '')
+                dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
+            else:
+                epoch_start = event.get('epochStartDate', 0)
+                dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else now
+        except Exception:
+            dt = now
+        
+        e.pubDate(dt)
+        
+        # Build description
+        description_parts = []
+        
+        if event.get('eventStatus') == 'operational':
+            description_parts.append(f"✅ {service_name} is operating normally")
+            description_parts.append("No current issues reported")
+        else:
             if event.get('startDate') and event.get('endDate') and event.get('eventStatus') == 'resolved':
                 description_parts.append(f"Started: {event.get('startDate')}")
                 description_parts.append(f"Ended: {event.get('endDate')}")
@@ -176,17 +221,8 @@ def create_aggregate_feed(services, title_suffix, service_type):
             if event.get('affectedServices'):
                 affected = ', '.join(event.get('affectedServices'))
                 description_parts.append(f"Affected Services: {affected}")
-            
-            e.description('\n\n'.join(description_parts))
-    else:
-        # No events across all services
-        now = datetime.datetime.now(timezone.utc)
-        e = fg.add_entry()
-        e.id(f"all-services-operational-{now.isoformat()}")
-        e.title(f"🟢 All {service_type} services operational")
-        e.link(href='https://www.apple.com/support/systemstatus/')
-        e.pubDate(now)
-        e.description(f"No current issues reported for any {service_type} services")
+        
+        e.description('\n\n'.join(description_parts))
     
     return fg
 
