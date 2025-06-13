@@ -94,7 +94,7 @@
     <div class="container">
         <h1>🍎 Apple System Status RSS Feeds</h1>
         <p class="subtitle">Real-time RSS feeds for all Apple services - updated automatically every 15 minutes</p>
-        <p class="last-updated" id="last-updated">Last updated: <span id="update-time">Jun 13, 2025, 09:03 PM UTC</span></p>
+        <p class="last-updated" id="last-updated">Last updated: <span id="update-time">Jun 13, 2025, 09:19 PM UTC</span></p>
         
         <div class="stats">
             📊 130 individual RSS feeds covering all Apple services
@@ -118,21 +118,21 @@
                 <h2>🌟 Master Feeds</h2>
                 <div class="feed-grid">
                     <div class="feed-item master-feed" data-name="all apple services combined master">
-                        <a href="all-apple-services.rss">
+                        <a href="rss/all-apple-services.rss">
                             <span class="emoji">🔗</span>All Apple Services (Combined)
-                            <button class="copy-btn" onclick="copyToClipboard('all-apple-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('rss/all-apple-services.rss')">📋</button>
                         </a>
                     </div>
                     <div class="feed-item aggregate-feeds" data-name="all developer services aggregate">
-                        <a href="developer/all-developer-services.rss">
+                        <a href="rss/developer/all-developer-services.rss">
                             <span class="emoji">👨‍💻</span>All Developer Services
-                            <button class="copy-btn" onclick="copyToClipboard('developer/all-developer-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('rss/developer/all-developer-services.rss')">📋</button>
                         </a>
                     </div>
                     <div class="feed-item aggregate-feeds" data-name="all system services aggregate general">
-                        <a href="general/all-system-services.rss">
+                        <a href="rss/general/all-system-services.rss">
                             <span class="emoji">🖥️</span>All System Services
-                            <button class="copy-btn" onclick="copyToClipboard('general/all-system-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('rss/general/all-system-services.rss')">📋</button>
                         </a>
                     </div>
                 </div>
@@ -159,27 +159,27 @@
                 <h2>🌟 Master & Aggregate Feeds</h2>
                 <div class="feed-grid">
                     <div class="feed-item master-feed">
-                        <a href="all-apple-services.rss">
+                        <a href="rss/all-apple-services.rss">
                             <span class="emoji">🔗</span>All Apple Services (Combined)
-                            <button class="copy-btn" onclick="copyToClipboard('all-apple-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('rss/all-apple-services.rss')">📋</button>
                         </a>
                         <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
                             Latest updates from all 127 Apple services (Developer + General)
                         </div>
                     </div>
                     <div class="feed-item aggregate-feeds">
-                        <a href="developer/all-developer-services.rss">
+                        <a href="rss/developer/all-developer-services.rss">
                             <span class="emoji">👨‍💻</span>All Developer Services
-                            <button class="copy-btn" onclick="copyToClipboard('developer/all-developer-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('rss/developer/all-developer-services.rss')">📋</button>
                         </a>
                         <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
                             All 48 developer-focused Apple services
                         </div>
                     </div>
                     <div class="feed-item aggregate-feeds">
-                        <a href="general/all-system-services.rss">
+                        <a href="rss/general/all-system-services.rss">
                             <span class="emoji">🖥️</span>All System Services
-                            <button class="copy-btn" onclick="copyToClipboard('general/all-system-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('rss/general/all-system-services.rss')">📋</button>
                         </a>
                         <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
                             All 79 general consumer Apple services
@@ -370,10 +370,10 @@
         }
 
         // Initialize feeds
-        renderFeeds(developerFeeds, 'developer-feeds', 'developer/');
-        renderFeeds(generalFeeds, 'general-feeds', 'general/');
-        renderFeeds(developerFeeds, 'developer-feeds-tab', 'developer/');
-        renderFeeds(generalFeeds, 'general-feeds-tab', 'general/');
+        renderFeeds(developerFeeds, 'developer-feeds', 'rss/developer/');
+        renderFeeds(generalFeeds, 'general-feeds', 'rss/general/');
+        renderFeeds(developerFeeds, 'developer-feeds-tab', 'rss/developer/');
+        renderFeeds(generalFeeds, 'general-feeds-tab', 'rss/general/');
 
         // Set last updated timestamp
         function updateTimestamp() {

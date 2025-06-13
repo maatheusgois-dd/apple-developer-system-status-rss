@@ -209,8 +209,8 @@ def sanitize_filename(name):
 def update_index_timestamp():
     """Update the index.html with the actual generation timestamp"""
     try:
-        # Try multiple possible paths for index.html
-        possible_paths = ['rss/index.html', './rss/index.html', '../rss/index.html']
+        # Try multiple possible paths for index.html (now in root)
+        possible_paths = ['index.html', './index.html', '../index.html']
         index_path = None
         
         for path in possible_paths:
