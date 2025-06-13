@@ -5,193 +5,435 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple System Status RSS Feeds</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f7; }
-        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            margin: 0; padding: 20px; background: #f5f5f7; line-height: 1.6;
+        }
+        .container { 
+            max-width: 1400px; margin: 0 auto; background: white; 
+            border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+        }
         h1 { color: #1d1d1f; text-align: center; margin-bottom: 10px; }
-        .subtitle { text-align: center; color: #86868b; margin-bottom: 40px; }
-        .feed-section { margin-bottom: 40px; }
-        .feed-section h2 { color: #1d1d1f; border-bottom: 2px solid #0071e3; padding-bottom: 10px; }
-        .feed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
-        .feed-item { background: #f6f6f6; padding: 15px; border-radius: 8px; border-left: 4px solid #0071e3; }
-        .feed-item a { text-decoration: none; color: #0071e3; font-weight: 500; }
-        .feed-item a:hover { text-decoration: underline; }
-        .aggregate-feeds { background: #e8f4fd; border-left-color: #0071e3; }
-        .master-feed { background: #d1ecf1; border-left-color: #007aff; font-weight: bold; }
+        .subtitle { text-align: center; color: #86868b; margin-bottom: 30px; }
         .stats { text-align: center; margin-bottom: 30px; color: #86868b; }
-        .emoji { font-size: 1.2em; margin-right: 8px; }
+        
+        /* Search */
+        .search-container { margin-bottom: 30px; text-align: center; }
+        .search-box { 
+            width: 100%; max-width: 500px; padding: 12px 20px; font-size: 16px;
+            border: 2px solid #e5e5e7; border-radius: 8px; outline: none;
+        }
+        .search-box:focus { border-color: #0071e3; }
+        
+        /* Tabs */
+        .tabs { display: flex; justify-content: center; margin-bottom: 30px; border-bottom: 1px solid #d2d2d7; }
+        .tab { 
+            padding: 15px 30px; cursor: pointer; border-bottom: 3px solid transparent;
+            font-weight: 500; transition: all 0.3s ease;
+        }
+        .tab:hover { background: #f6f6f6; }
+        .tab.active { border-bottom-color: #0071e3; color: #0071e3; }
+        
+        /* Feed sections */
+        .feed-section { margin-bottom: 40px; }
+        .feed-section h2 { 
+            color: #1d1d1f; border-bottom: 2px solid #0071e3; 
+            padding-bottom: 10px; margin-bottom: 20px; 
+        }
+        .feed-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 12px; 
+        }
+        .feed-item { 
+            background: #f6f6f6; padding: 12px 15px; border-radius: 8px; 
+            border-left: 4px solid #0071e3; transition: all 0.2s ease;
+        }
+        .feed-item:hover { 
+            background: #e8f4fd; transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .feed-item a { 
+            text-decoration: none; color: #0071e3; font-weight: 500; 
+            display: flex; align-items: center;
+        }
+        .feed-item a:hover { text-decoration: underline; }
+        .aggregate-feeds { background: #e8f4fd; border-left-color: #007aff; }
+        .master-feed { background: #d1ecf1; border-left-color: #007aff; font-weight: bold; }
+        .emoji { font-size: 1.1em; margin-right: 8px; min-width: 24px; }
+        
+        /* Hidden sections for tabs */
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        
+        /* Copy button */
+        .copy-btn {
+            background: #f0f0f0; border: none; padding: 4px 8px; margin-left: 8px;
+            border-radius: 4px; cursor: pointer; font-size: 12px; opacity: 0.7;
+        }
+        .copy-btn:hover { opacity: 1; background: #e0e0e0; }
+        
+        /* Footer */
+        .footer { 
+            text-align: center; color: #86868b; margin-top: 40px; 
+            padding-top: 20px; border-top: 1px solid #d2d2d7; 
+        }
+        
+        /* No results */
+        .no-results { 
+            text-align: center; color: #86868b; padding: 40px; 
+            display: none; 
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🍎 Apple System Status RSS Feeds</h1>
-        <p class="subtitle">Real-time RSS feeds for all Apple services - updated automatically</p>
+        <p class="subtitle">Real-time RSS feeds for all Apple services - updated automatically every 15 minutes</p>
         
         <div class="stats">
             📊 130 individual RSS feeds covering all Apple services
         </div>
 
-        <!-- Master Aggregate Feed -->
-        <div class="feed-section">
-            <h2>🌟 Master Feed</h2>
-            <div class="feed-grid">
-                <div class="feed-item master-feed">
-                    <a href="all-apple-services.rss">
-                        <span class="emoji">🔗</span>All Apple Services (Combined)
-                    </a>
-                    <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
-                        Latest updates from all Apple developer and system services
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="🔍 Search for a specific Apple service..." 
+                   oninput="filterFeeds(this.value)">
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('all')">All Feeds (130)</div>
+            <div class="tab" onclick="showTab('master')">Master Feeds (3)</div>
+            <div class="tab" onclick="showTab('developer')">Developer (49)</div>
+            <div class="tab" onclick="showTab('general')">General (79)</div>
+        </div>
+
+        <!-- All Feeds Tab -->
+        <div id="all" class="tab-content active">
+            <div class="feed-section">
+                <h2>🌟 Master Feeds</h2>
+                <div class="feed-grid">
+                    <div class="feed-item master-feed" data-name="all apple services combined master">
+                        <a href="all-apple-services.rss">
+                            <span class="emoji">🔗</span>All Apple Services (Combined)
+                            <button class="copy-btn" onclick="copyToClipboard('all-apple-services.rss')">📋</button>
+                        </a>
+                    </div>
+                    <div class="feed-item aggregate-feeds" data-name="all developer services aggregate">
+                        <a href="developer/all-developer-services.rss">
+                            <span class="emoji">👨‍💻</span>All Developer Services
+                            <button class="copy-btn" onclick="copyToClipboard('developer/all-developer-services.rss')">📋</button>
+                        </a>
+                    </div>
+                    <div class="feed-item aggregate-feeds" data-name="all system services aggregate general">
+                        <a href="general/all-system-services.rss">
+                            <span class="emoji">🖥️</span>All System Services
+                            <button class="copy-btn" onclick="copyToClipboard('general/all-system-services.rss')">📋</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feed-section">
+                <h2>👨‍💻 Developer Services (49 feeds)</h2>
+                <div class="feed-grid" id="developer-feeds">
+                    <!-- Developer feeds will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="feed-section">
+                <h2>🖥️ General Services (79 feeds)</h2>
+                <div class="feed-grid" id="general-feeds">
+                    <!-- General feeds will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Master Feeds Tab -->
+        <div id="master" class="tab-content">
+            <div class="feed-section">
+                <h2>🌟 Master & Aggregate Feeds</h2>
+                <div class="feed-grid">
+                    <div class="feed-item master-feed">
+                        <a href="all-apple-services.rss">
+                            <span class="emoji">🔗</span>All Apple Services (Combined)
+                            <button class="copy-btn" onclick="copyToClipboard('all-apple-services.rss')">📋</button>
+                        </a>
+                        <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
+                            Latest updates from all 127 Apple services (Developer + General)
+                        </div>
+                    </div>
+                    <div class="feed-item aggregate-feeds">
+                        <a href="developer/all-developer-services.rss">
+                            <span class="emoji">👨‍💻</span>All Developer Services
+                            <button class="copy-btn" onclick="copyToClipboard('developer/all-developer-services.rss')">📋</button>
+                        </a>
+                        <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
+                            All 48 developer-focused Apple services
+                        </div>
+                    </div>
+                    <div class="feed-item aggregate-feeds">
+                        <a href="general/all-system-services.rss">
+                            <span class="emoji">🖥️</span>All System Services
+                            <button class="copy-btn" onclick="copyToClipboard('general/all-system-services.rss')">📋</button>
+                        </a>
+                        <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
+                            All 79 general consumer Apple services
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Developer Services -->
-        <div class="feed-section">
-            <h2>👨‍💻 Developer Services (48 feeds)</h2>
-            <div class="feed-grid">
-                <div class="feed-item aggregate-feeds">
-                    <a href="developer/all-developer-services.rss">
-                        <span class="emoji">📦</span>All Developer Services
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/account.rss">
-                        <span class="emoji">👤</span>Account
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/apns.rss">
-                        <span class="emoji">📱</span>APNS
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/apns-sandbox.rss">
-                        <span class="emoji">🧪</span>APNS Sandbox
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/app-attest.rss">
-                        <span class="emoji">🔒</span>App Attest
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/app-store-connect.rss">
-                        <span class="emoji">🏪</span>App Store Connect
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/app-store-connect-api.rss">
-                        <span class="emoji">🔌</span>App Store Connect API
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/apple-music-api.rss">
-                        <span class="emoji">🎵</span>Apple Music API
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/cloudkit-console.rss">
-                        <span class="emoji">☁️</span>CloudKit Console
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/cloudkit-database.rss">
-                        <span class="emoji">🗄️</span>CloudKit Database
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/xcode-cloud.rss">
-                        <span class="emoji">⚡</span>Xcode Cloud
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="developer/apple-pay-production-instance.rss">
-                        <span class="emoji">💳</span>Apple Pay Production
-                    </a>
-                </div>
-                <!-- Note: Showing key services, full list available in directory -->
-                <div class="feed-item" style="grid-column: 1/-1; text-align: center; font-style: italic; color: #666;">
-                    ... and 36 more developer services in the <a href="developer/" style="color: #0071e3;">developer/</a> directory
+        <!-- Developer Tab -->
+        <div id="developer" class="tab-content">
+            <div class="feed-section">
+                <h2>👨‍💻 Developer Services (49 feeds)</h2>
+                <div class="feed-grid" id="developer-feeds-tab">
+                    <!-- Developer feeds will be inserted here -->
                 </div>
             </div>
         </div>
 
-        <!-- General/System Services -->
-        <div class="feed-section">
-            <h2>🖥️ General Services (79 feeds)</h2>
-            <div class="feed-grid">
-                <div class="feed-item aggregate-feeds">
-                    <a href="general/all-system-services.rss">
-                        <span class="emoji">📦</span>All System Services
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/app-store.rss">
-                        <span class="emoji">🏪</span>App Store
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/apple-music.rss">
-                        <span class="emoji">🎵</span>Apple Music
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/icloud-drive.rss">
-                        <span class="emoji">☁️</span>iCloud Drive
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/icloud-mail.rss">
-                        <span class="emoji">📧</span>iCloud Mail
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/icloud-calendar.rss">
-                        <span class="emoji">📅</span>iCloud Calendar
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/icloud-contacts.rss">
-                        <span class="emoji">👥</span>iCloud Contacts
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/facetime.rss">
-                        <span class="emoji">📹</span>FaceTime
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/imessage.rss">
-                        <span class="emoji">💬</span>iMessage
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/apple-pay.rss">
-                        <span class="emoji">💳</span>Apple Pay
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/siri.rss">
-                        <span class="emoji">🗣️</span>Siri
-                    </a>
-                </div>
-                <div class="feed-item">
-                    <a href="general/apple-tv+.rss">
-                        <span class="emoji">📺</span>Apple TV+
-                    </a>
-                </div>
-                <!-- Note: Showing key services, full list available in directory -->
-                <div class="feed-item" style="grid-column: 1/-1; text-align: center; font-style: italic; color: #666;">
-                    ... and 67 more system services in the <a href="general/" style="color: #0071e3;">general/</a> directory
+        <!-- General Tab -->
+        <div id="general" class="tab-content">
+            <div class="feed-section">
+                <h2>🖥️ General Services (79 feeds)</h2>
+                <div class="feed-grid" id="general-feeds-tab">
+                    <!-- General feeds will be inserted here -->
                 </div>
             </div>
         </div>
 
-        <div style="text-align: center; color: #86868b; margin-top: 40px; padding-top: 20px; border-top: 1px solid #d2d2d7;">
+        <div class="no-results" id="no-results">
+            <h3>🔍 No services found</h3>
+            <p>Try a different search term or browse all feeds above.</p>
+        </div>
+
+        <div class="footer">
             <p>🔄 Feeds are automatically updated with the latest Apple system status information</p>
             <p>📡 Subscribe to any feed in your RSS reader to get real-time notifications</p>
             <p>📊 Data sourced from <a href="https://www.apple.com/support/systemstatus/" style="color: #0071e3;">Apple System Status</a></p>
         </div>
     </div>
+
+    <script>
+        // All feeds data
+        const developerFeeds = [
+            { name: "Account", file: "account.rss", emoji: "👤" },
+            { name: "APNS", file: "apns.rss", emoji: "📱" },
+            { name: "APNS Sandbox", file: "apns-sandbox.rss", emoji: "🧪" },
+            { name: "App Attest", file: "app-attest.rss", emoji: "🔒" },
+            { name: "App Store - Advanced Commerce API", file: "app-store---advanced-commerce-api.rss", emoji: "🏪" },
+            { name: "App Store - In-App Purchases", file: "app-store---in-app-purchases.rss", emoji: "💰" },
+            { name: "App Store - Receipt Verification", file: "app-store---receipt-verification.rss", emoji: "🧾" },
+            { name: "App Store - Sandbox", file: "app-store---sandbox.rss", emoji: "🏪" },
+            { name: "App Store - Server APIs", file: "app-store---server-apis.rss", emoji: "🔌" },
+            { name: "App Store - Server Notifications", file: "app-store---server-notifications.rss", emoji: "🔔" },
+            { name: "App Store Automatic App Updates", file: "app-store-automatic-app-updates.rss", emoji: "🔄" },
+            { name: "App Store Connect", file: "app-store-connect.rss", emoji: "🏪" },
+            { name: "App Store Connect - Analytics", file: "app-store-connect---analytics.rss", emoji: "📊" },
+            { name: "App Store Connect - App Processing", file: "app-store-connect---app-processing-.rss", emoji: "⚙️" },
+            { name: "App Store Connect - App Upload", file: "app-store-connect---app-upload.rss", emoji: "⬆️" },
+            { name: "App Store Connect - Sales and Trends", file: "app-store-connect---sales-and-trends.rss", emoji: "📈" },
+            { name: "App Store Connect - TestFlight", file: "app-store-connect---testflight.rss", emoji: "✈️" },
+            { name: "App Store Connect API", file: "app-store-connect-api.rss", emoji: "🔌" },
+            { name: "Apple Developer Forums", file: "apple-developer-forums.rss", emoji: "💬" },
+            { name: "Apple Maps API", file: "apple-maps-api.rss", emoji: "🗺️" },
+            { name: "Apple Music API", file: "apple-music-api.rss", emoji: "🎵" },
+            { name: "Apple Music for Artists", file: "apple-music-for-artists.rss", emoji: "🎤" },
+            { name: "Apple News API", file: "apple-news-api.rss", emoji: "📰" },
+            { name: "Apple Pay Developer Demo", file: "apple-pay-developer---apple-pay-demo.rss", emoji: "💳" },
+            { name: "Apple Pay Production Instance", file: "apple-pay-production-instance.rss", emoji: "💳" },
+            { name: "Apple Pay Sandbox Instance", file: "apple-pay-sandbox-instance.rss", emoji: "💳" },
+            { name: "Apple Podcasts Connect", file: "apple-podcasts-connect.rss", emoji: "🎙️" },
+            { name: "Certificates, Identifiers & Profiles", file: "certificates,-identifiers-and-profiles.rss", emoji: "📄" },
+            { name: "CloudKit Console", file: "cloudkit-console.rss", emoji: "☁️" },
+            { name: "CloudKit Database", file: "cloudkit-database.rss", emoji: "🗄️" },
+            { name: "Code-level Support", file: "code-level-support.rss", emoji: "🆘" },
+            { name: "Contact Us", file: "contact-us.rss", emoji: "📞" },
+            { name: "Developer Documentation", file: "developer-documentation.rss", emoji: "📚" },
+            { name: "Developer ID Notary Service", file: "developer-id-notary-service.rss", emoji: "✅" },
+            { name: "Device Enrollment Program", file: "device-enrollment-program.rss", emoji: "📱" },
+            { name: "Feedback Assistant", file: "feedback-assistant.rss", emoji: "💬" },
+            { name: "MapKit JS Dashboard", file: "mapkit-js-dashboard.rss", emoji: "🗺️" },
+            { name: "MFi Portal", file: "mfi-portal.rss", emoji: "🔌" },
+            { name: "News Publisher", file: "news-publisher.rss", emoji: "📰" },
+            { name: "NFC & SE Platform", file: "nfc-and-se-platform.rss", emoji: "📡" },
+            { name: "Program Enrollment and Renewals", file: "program-enrollment-and-renewals.rss", emoji: "📝" },
+            { name: "SKAdNetwork", file: "skadnetwork.rss", emoji: "📊" },
+            { name: "Software Downloads", file: "software-downloads.rss", emoji: "⬇️" },
+            { name: "Tap to Pay on iPhone", file: "tap-to-pay-on-iphone.rss", emoji: "📱" },
+            { name: "Videos", file: "videos.rss", emoji: "🎥" },
+            { name: "WeatherKit", file: "weatherkit.rss", emoji: "🌤️" },
+            { name: "Xcode Automatic Configuration", file: "xcode-automatic-configuration.rss", emoji: "⚙️" },
+            { name: "Xcode Cloud", file: "xcode-cloud.rss", emoji: "☁️" }
+        ];
+
+        const generalFeeds = [
+            { name: "App Store", file: "app-store.rss", emoji: "🏪" },
+            { name: "Apple Account", file: "apple-account.rss", emoji: "👤" },
+            { name: "Apple Account Card", file: "apple-account-card.rss", emoji: "💳" },
+            { name: "Apple Arcade", file: "apple-arcade.rss", emoji: "🎮" },
+            { name: "Apple Books", file: "apple-books.rss", emoji: "📚" },
+            { name: "Apple Business Essentials", file: "apple-business-essentials.rss", emoji: "🏢" },
+            { name: "Apple Business Manager", file: "apple-business-manager.rss", emoji: "🏢" },
+            { name: "Apple Card", file: "apple-card.rss", emoji: "💳" },
+            { name: "Apple Cash", file: "apple-cash.rss", emoji: "💰" },
+            { name: "Apple Fitness+", file: "apple-fitness+.rss", emoji: "💪" },
+            { name: "Apple Invites", file: "apple-invites.rss", emoji: "📨" },
+            { name: "Apple Messages for Business", file: "apple-messages-for-business.rss", emoji: "💬" },
+            { name: "Apple Music", file: "apple-music.rss", emoji: "🎵" },
+            { name: "Apple Music Classical", file: "apple-music-classical.rss", emoji: "🎼" },
+            { name: "Apple Music Radio", file: "apple-music-radio.rss", emoji: "📻" },
+            { name: "Apple Music Subscriptions", file: "apple-music-subscriptions.rss", emoji: "🎵" },
+            { name: "Apple Online Store", file: "apple-online-store.rss", emoji: "🛒" },
+            { name: "Apple Pay", file: "apple-pay.rss", emoji: "💳" },
+            { name: "Apple School Manager", file: "apple-school-manager.rss", emoji: "🏫" },
+            { name: "Apple Sports", file: "apple-sports.rss", emoji: "⚽" },
+            { name: "Apple TV Channels", file: "apple-tv-channels.rss", emoji: "📺" },
+            { name: "Apple TV+", file: "apple-tv+.rss", emoji: "📺" },
+            { name: "AppleCare on Device", file: "applecare-on-device.rss", emoji: "🆘" },
+            { name: "Audiobooks", file: "audiobooks.rss", emoji: "🎧" },
+            { name: "BusinessConnect", file: "businessconnect.rss", emoji: "🏢" },
+            { name: "Dictation", file: "dictation.rss", emoji: "🎤" },
+            { name: "FaceTime", file: "facetime.rss", emoji: "📹" },
+            { name: "Find My", file: "find-my.rss", emoji: "📍" },
+            { name: "Game Center", file: "game-center.rss", emoji: "🎮" },
+            { name: "Global Service Exchange", file: "global-service-exchange.rss", emoji: "🌍" },
+            { name: "Health sharing with provider", file: "health-sharing-with-provider.rss", emoji: "🏥" },
+            { name: "HomeKit", file: "homekit.rss", emoji: "🏠" },
+            { name: "HomeKit Secure Video", file: "homekit-secure-video.rss", emoji: "📹" },
+            { name: "iCloud Account & Sign In", file: "icloud-account-and-sign-in.rss", emoji: "☁️" },
+            { name: "iCloud Backup", file: "icloud-backup.rss", emoji: "💾" },
+            { name: "iCloud Bookmarks & Tabs", file: "icloud-bookmarks-and-tabs.rss", emoji: "🔖" },
+            { name: "iCloud Calendar", file: "icloud-calendar.rss", emoji: "📅" },
+            { name: "iCloud Contacts", file: "icloud-contacts.rss", emoji: "👥" },
+            { name: "iCloud Drive", file: "icloud-drive.rss", emoji: "☁️" },
+            { name: "iCloud Keychain", file: "icloud-keychain.rss", emoji: "🔐" },
+            { name: "iCloud Mail", file: "icloud-mail.rss", emoji: "📧" },
+            { name: "iCloud Notes", file: "icloud-notes.rss", emoji: "📝" },
+            { name: "iCloud Private Relay", file: "icloud-private-relay.rss", emoji: "🔒" },
+            { name: "iCloud Reminders", file: "icloud-reminders.rss", emoji: "✅" },
+            { name: "iCloud Storage Upgrades", file: "icloud-storage-upgrades.rss", emoji: "💾" },
+            { name: "iCloud Web Apps (iCloud.com)", file: "icloud-web-apps-(icloud.com).rss", emoji: "🌐" },
+            { name: "iMessage", file: "imessage.rss", emoji: "💬" },
+            { name: "iOS Device Activation", file: "ios-device-activation.rss", emoji: "📱" },
+            { name: "iTunes Match", file: "itunes-match.rss", emoji: "🎵" },
+            { name: "iTunes Store", file: "itunes-store.rss", emoji: "🏪" },
+            { name: "iWork Collaboration", file: "iwork-collaboration.rss", emoji: "📄" },
+            { name: "iWork for iCloud", file: "iwork-for-icloud.rss", emoji: "☁️" },
+            { name: "Mac App Store", file: "mac-app-store.rss", emoji: "💻" },
+            { name: "macOS Software Update", file: "macos-software-update.rss", emoji: "🔄" },
+            { name: "Mail Drop", file: "mail-drop.rss", emoji: "📧" },
+            { name: "Maps Display", file: "maps-display.rss", emoji: "🗺️" },
+            { name: "Maps Routing & Navigation", file: "maps-routing-and-navigation.rss", emoji: "🧭" },
+            { name: "Maps Search", file: "maps-search.rss", emoji: "🔍" },
+            { name: "Maps Traffic", file: "maps-traffic.rss", emoji: "🚦" },
+            { name: "MLS Season Pass", file: "mls-season-pass.rss", emoji: "⚽" },
+            { name: "News", file: "news.rss", emoji: "📰" },
+            { name: "Photos", file: "photos.rss", emoji: "📸" },
+            { name: "Podcasts", file: "podcasts.rss", emoji: "🎙️" },
+            { name: "Private Cloud Compute", file: "private-cloud-compute.rss", emoji: "☁️" },
+            { name: "Radio", file: "radio.rss", emoji: "📻" },
+            { name: "Schooltime", file: "schooltime.rss", emoji: "🎓" },
+            { name: "Schoolwork", file: "schoolwork.rss", emoji: "📚" },
+            { name: "Screen Time", file: "screen-time.rss", emoji: "⏰" },
+            { name: "Sign in with Apple", file: "sign-in-with-apple.rss", emoji: "🍎" },
+            { name: "Siri", file: "siri.rss", emoji: "🗣️" },
+            { name: "Spotlight suggestions", file: "spotlight-suggestions.rss", emoji: "🔍" },
+            { name: "Stocks", file: "stocks.rss", emoji: "📈" },
+            { name: "Subscription Purchase", file: "subscription-purchase.rss", emoji: "💳" },
+            { name: "TV Provider", file: "tv-provider.rss", emoji: "📺" },
+            { name: "visionOS App Store", file: "visionos-app-store.rss", emoji: "🥽" },
+            { name: "Volume Purchase Program", file: "volume-purchase-program.rss", emoji: "📦" },
+            { name: "Walkie-Talkie", file: "walkie-talkie.rss", emoji: "📻" },
+            { name: "Wallet", file: "wallet.rss", emoji: "💳" },
+            { name: "Weather", file: "weather.rss", emoji: "🌤️" }
+        ];
+
+        // Render feeds
+        function renderFeeds(feeds, containerId, pathPrefix = '') {
+            const container = document.getElementById(containerId);
+            container.innerHTML = feeds.map(feed => `
+                <div class="feed-item" data-name="${feed.name.toLowerCase()}">
+                    <a href="${pathPrefix}${feed.file}">
+                        <span class="emoji">${feed.emoji}</span>${feed.name}
+                        <button class="copy-btn" onclick="copyToClipboard('${pathPrefix}${feed.file}')">📋</button>
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        // Initialize feeds
+        renderFeeds(developerFeeds, 'developer-feeds', 'developer/');
+        renderFeeds(generalFeeds, 'general-feeds', 'general/');
+        renderFeeds(developerFeeds, 'developer-feeds-tab', 'developer/');
+        renderFeeds(generalFeeds, 'general-feeds-tab', 'general/');
+
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active from all tabs
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // Search functionality
+        function filterFeeds(searchTerm) {
+            const term = searchTerm.toLowerCase();
+            const allItems = document.querySelectorAll('.feed-item[data-name]');
+            let visibleCount = 0;
+            
+            allItems.forEach(item => {
+                const name = item.getAttribute('data-name');
+                if (name.includes(term)) {
+                    item.style.display = '';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Show/hide no results message
+            const noResults = document.getElementById('no-results');
+            if (term && visibleCount === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+
+        // Copy to clipboard
+        function copyToClipboard(path) {
+            const baseUrl = window.location.origin + window.location.pathname.replace(/\/?$/, '/');
+            const fullUrl = baseUrl + path;
+            navigator.clipboard.writeText(fullUrl).then(() => {
+                // Show feedback
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✓';
+                btn.style.background = '#28a745';
+                btn.style.color = 'white';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 1000);
+            }).catch(() => {
+                alert('URL: ' + fullUrl);
+            });
+        }
+    </script>
 </body>
 </html> 
