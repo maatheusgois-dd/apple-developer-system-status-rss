@@ -5,15 +5,15 @@
     <link>https://www.apple.com/support/systemstatus/</link>
     <description>Latest updates for iCloud Mail</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
-    <generator>micro-optimized-rss</generator>
+    <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 22:11:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 22:13:33 +0000</lastBuildDate>
     <item>
       <title>🟢 iCloud Mail: All systems operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>No current issues reported for iCloud Mail</description>
-      <guid isPermaLink="false">iCloud Mail-no-events-2025-06-13T22:11:43.885502+00:00</guid>
-      <pubDate>Fri, 13 Jun 2025 22:11:43 +0000</pubDate>
+      <guid isPermaLink="false">iCloud Mail-no-events-2025-06-13T22:13:33.104035+00:00</guid>
+      <pubDate>Fri, 13 Jun 2025 22:13:33 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,15 +5,15 @@
     <link>https://developer.apple.com/news-publisher/</link>
     <description>Latest updates for Apple Account Card</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
-    <generator>micro-optimized-rss</generator>
+    <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 22:11:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 22:13:33 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Account Card: All systems operational</title>
       <link>https://developer.apple.com/news-publisher/</link>
       <description>No current issues reported for Apple Account Card</description>
-      <guid isPermaLink="false">Apple Account Card-no-events-2025-06-13T22:11:43.880940+00:00</guid>
-      <pubDate>Fri, 13 Jun 2025 22:11:43 +0000</pubDate>
+      <guid isPermaLink="false">Apple Account Card-no-events-2025-06-13T22:13:33.096877+00:00</guid>
+      <pubDate>Fri, 13 Jun 2025 22:13:33 +0000</pubDate>
     </item>
   </channel>
 </rss>
