@@ -11,16 +11,16 @@ def main():
     url = 'https://www.apple.com/support/systemstatus/data/developer/system_status_en_US.js'
     txt = requests.get(url).text
 
-    # 2) Extract the JSON object with a regex
-    match = re.search(r'var\s+systemStatus\s*=\s*(\{.*\})\s*;', txt, re.DOTALL)
+    # 2) Extract the JSON object from JSONP callback
+    match = re.search(r'jsonCallback\s*\(\s*(\{.*\})\s*\)\s*;?', txt, re.DOTALL)
     if not match:
-        print("💥 ERROR: couldn't find the systemStatus JSON in the downloaded JS.", file=sys.stderr)
+        print("💥 ERROR: couldn't find the jsonCallback JSON in the downloaded JS.", file=sys.stderr)
         sys.exit(1)
     data = json.loads(match.group(1))
 
-    # 3) Locate the App Attest component
-    components = data.get('components', [])
-    app_attest = next((c for c in components if 'App Attest' in c.get('name','')), None)
+    # 3) Locate the App Attest service
+    services = data.get('services', [])
+    app_attest = next((s for s in services if 'App Attest' in s.get('serviceName','')), None)
 
     # 4) Build the RSS feed
     fg = FeedGenerator()
@@ -30,17 +30,41 @@ def main():
     fg.language('en')
 
     if app_attest:
-        for u in app_attest.get('updates', []):
+        for event in app_attest.get('events', []):
             e = fg.add_entry()
-            e.id((u.get('number','') or '') + (u.get('date','') or ''))
-            e.title(f"{app_attest['name']}: {u.get('message','')}")
+            e.id(str(event.get('messageId', '')) + str(event.get('epochStartDate', '')))
+            status_emoji = "🟢" if event.get('eventStatus') == 'resolved' else "🟠"
+            e.title(f"{status_emoji} {app_attest['serviceName']}: {event.get('statusType', 'Issue')} ({event.get('eventStatus', 'unknown')})")
             e.link(href='https://www.apple.com/support/systemstatus/')
             try:
-                dt = datetime.datetime.fromisoformat(u.get('date','').replace('Z','+00:00'))
+                # Try to parse datePosted first, then fall back to epochStartDate
+                date_str = event.get('datePosted', '')
+                if date_str:
+                    # Parse format like "06/13/2025 01:00 PDT"
+                    dt = datetime.datetime.strptime(date_str.replace(' PDT', '').replace(' PST', ''), '%m/%d/%Y %H:%M')
+                else:
+                    # Fall back to epoch timestamp
+                    epoch_start = event.get('epochStartDate', 0)
+                    dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0)
             except Exception:
                 dt = datetime.datetime.utcnow()
             e.pubDate(dt)
-            e.description(u.get('message',''))
+            
+            # Build description with event details
+            description = []
+            if event.get('startDate') and event.get('endDate'):
+                description.append(f"Started: {event.get('startDate')}")
+                description.append(f"Ended: {event.get('endDate')}")
+            elif event.get('startDate'):
+                description.append(f"Started: {event.get('startDate')}")
+            
+            if event.get('message'):
+                description.append(event.get('message'))
+            
+            if event.get('usersAffected'):
+                description.append(event.get('usersAffected'))
+                
+            e.description('\n\n'.join(description))
     else:
         now = datetime.datetime.utcnow()
         e = fg.add_entry()

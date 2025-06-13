@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Apple All System Status – All Apple Services</title>
+    <link>https://www.apple.com/support/systemstatus/</link>
+    <description>Latest updates for all Apple All services</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Jun 2025 19:04:39 +0000</lastBuildDate>
+    <item>
+      <title>🟢 Xcode Cloud: Outage (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 11:30 PDT
+
+Ended: 06/12/2025 14:30 PDT
+
+This service was disrupted, but is now stable.
+
+Some users were affected</description>
+      <guid isPermaLink="false">Xcode Cloud-1000004909-1749753000000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Contacts: Issue (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 11:35 PDT
+
+Ended: 06/12/2025 13:20 PDT
+
+Users may have experienced a problem with this service.
+
+Some users were affected
+
+Affected Services: iCloud Calendar, iCloud Contacts</description>
+      <guid isPermaLink="false">iCloud Contacts-2000004680-1749753300000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 iCloud Calendar: Issue (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 11:35 PDT
+
+Ended: 06/12/2025 13:20 PDT
+
+Users did not receive push notifications.
+
+Some users were affected
+
+Affected Services: iCloud Calendar, iCloud Contacts</description>
+      <guid isPermaLink="false">iCloud Calendar-2000004680-1749753300000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Podcasts Connect: Performance (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 11:43 PDT
+
+Ended: 06/12/2025 13:23 PDT
+
+Users experienced a problem with this service.
+
+Some users were affected
+
+Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
+      <guid isPermaLink="false">Apple Podcasts Connect-2000004679-1749753780000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Music for Artists: Performance (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 11:43 PDT
+
+Ended: 06/12/2025 13:23 PDT
+
+Apple Music for Artists was unavailable due to scheduled maintenance
+
+Some users were affected
+
+Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
+      <guid isPermaLink="false">Apple Music for Artists-2000004679-1749753780000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Music API: Performance (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 11:43 PDT
+
+Ended: 06/12/2025 13:23 PDT
+
+Users experienced a problem with this service.
+
+Some users were affected
+
+Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
+      <guid isPermaLink="false">Apple Music API-2000004679-1749753780000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 App Store Connect API: Performance (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 11:43 PDT
+
+Ended: 06/12/2025 13:23 PDT
+
+Users experienced a problem with this service.
+
+Some users were affected
+
+Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
+      <guid isPermaLink="false">App Store Connect API-2000004679-1749753780000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 App Store Connect: Performance (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 11:43 PDT
+
+Ended: 06/12/2025 13:23 PDT
+
+Users experienced a problem with this service.
+
+Some users were affected
+
+Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
+      <guid isPermaLink="false">App Store Connect-2000004679-1749753780000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 News Publisher: Performance (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 12:05 PDT
+
+Ended: 06/12/2025 13:35 PDT
+
+Users experienced a problem with this service.
+
+Some users were affected
+
+Affected Services: Apple News API, News Publisher</description>
+      <guid isPermaLink="false">News Publisher-1000004910-1749755100000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple News API: Performance (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 12:05 PDT
+
+Ended: 06/12/2025 13:35 PDT
+
+We performed routine maintenance, with no user impact.
+
+Some users were affected
+
+Affected Services: Apple News API, News Publisher</description>
+      <guid isPermaLink="false">Apple News API-1000004910-1749755100000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple School Manager: Issue (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 21:07 PDT
+
+Ended: 06/13/2025 00:40 PDT
+
+Users were unable to access multiple services and stores or make purchases.
+
+Some users were affected
+
+Affected Services: Apple Business Manager, Apple School Manager</description>
+      <guid isPermaLink="false">Apple School Manager-1000004911-1749787620000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Business Manager: Issue (resolved)</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>Started: 06/12/2025 21:07 PDT
+
+Ended: 06/13/2025 00:40 PDT
+
+Users may have experienced a problem with this service.
+
+Some users were affected
+
+Affected Services: Apple Business Manager, Apple School Manager</description>
+      <guid isPermaLink="false">Apple Business Manager-1000004911-1749787620000</guid>
+      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

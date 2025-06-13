@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple System Status RSS Feeds</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f7; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        h1 { color: #1d1d1f; text-align: center; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #86868b; margin-bottom: 40px; }
+        .feed-section { margin-bottom: 40px; }
+        .feed-section h2 { color: #1d1d1f; border-bottom: 2px solid #0071e3; padding-bottom: 10px; }
+        .feed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
+        .feed-item { background: #f6f6f6; padding: 15px; border-radius: 8px; border-left: 4px solid #0071e3; }
+        .feed-item a { text-decoration: none; color: #0071e3; font-weight: 500; }
+        .feed-item a:hover { text-decoration: underline; }
+        .aggregate-feeds { background: #e8f4fd; border-left-color: #0071e3; }
+        .master-feed { background: #d1ecf1; border-left-color: #007aff; font-weight: bold; }
+        .stats { text-align: center; margin-bottom: 30px; color: #86868b; }
+        .emoji { font-size: 1.2em; margin-right: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍎 Apple System Status RSS Feeds</h1>
+        <p class="subtitle">Real-time RSS feeds for all Apple services - updated automatically</p>
+        
+        <div class="stats">
+            📊 130 individual RSS feeds covering all Apple services
+        </div>
+
+        <!-- Master Aggregate Feed -->
+        <div class="feed-section">
+            <h2>🌟 Master Feed</h2>
+            <div class="feed-grid">
+                <div class="feed-item master-feed">
+                    <a href="all-apple-services.rss">
+                        <span class="emoji">🔗</span>All Apple Services (Combined)
+                    </a>
+                    <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
+                        Latest updates from all Apple developer and system services
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Developer Services -->
+        <div class="feed-section">
+            <h2>👨‍💻 Developer Services (48 feeds)</h2>
+            <div class="feed-grid">
+                <div class="feed-item aggregate-feeds">
+                    <a href="developer/all-developer-services.rss">
+                        <span class="emoji">📦</span>All Developer Services
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/account.rss">
+                        <span class="emoji">👤</span>Account
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/apns.rss">
+                        <span class="emoji">📱</span>APNS
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/apns-sandbox.rss">
+                        <span class="emoji">🧪</span>APNS Sandbox
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/app-attest.rss">
+                        <span class="emoji">🔒</span>App Attest
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/app-store-connect.rss">
+                        <span class="emoji">🏪</span>App Store Connect
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/app-store-connect-api.rss">
+                        <span class="emoji">🔌</span>App Store Connect API
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/apple-music-api.rss">
+                        <span class="emoji">🎵</span>Apple Music API
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/cloudkit-console.rss">
+                        <span class="emoji">☁️</span>CloudKit Console
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/cloudkit-database.rss">
+                        <span class="emoji">🗄️</span>CloudKit Database
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/xcode-cloud.rss">
+                        <span class="emoji">⚡</span>Xcode Cloud
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="developer/apple-pay-production-instance.rss">
+                        <span class="emoji">💳</span>Apple Pay Production
+                    </a>
+                </div>
+                <!-- Note: Showing key services, full list available in directory -->
+                <div class="feed-item" style="grid-column: 1/-1; text-align: center; font-style: italic; color: #666;">
+                    ... and 36 more developer services in the <a href="developer/" style="color: #0071e3;">developer/</a> directory
+                </div>
+            </div>
+        </div>
+
+        <!-- General/System Services -->
+        <div class="feed-section">
+            <h2>🖥️ General Services (79 feeds)</h2>
+            <div class="feed-grid">
+                <div class="feed-item aggregate-feeds">
+                    <a href="general/all-system-services.rss">
+                        <span class="emoji">📦</span>All System Services
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/app-store.rss">
+                        <span class="emoji">🏪</span>App Store
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/apple-music.rss">
+                        <span class="emoji">🎵</span>Apple Music
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/icloud-drive.rss">
+                        <span class="emoji">☁️</span>iCloud Drive
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/icloud-mail.rss">
+                        <span class="emoji">📧</span>iCloud Mail
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/icloud-calendar.rss">
+                        <span class="emoji">📅</span>iCloud Calendar
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/icloud-contacts.rss">
+                        <span class="emoji">👥</span>iCloud Contacts
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/facetime.rss">
+                        <span class="emoji">📹</span>FaceTime
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/imessage.rss">
+                        <span class="emoji">💬</span>iMessage
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/apple-pay.rss">
+                        <span class="emoji">💳</span>Apple Pay
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/siri.rss">
+                        <span class="emoji">🗣️</span>Siri
+                    </a>
+                </div>
+                <div class="feed-item">
+                    <a href="general/apple-tv+.rss">
+                        <span class="emoji">📺</span>Apple TV+
+                    </a>
+                </div>
+                <!-- Note: Showing key services, full list available in directory -->
+                <div class="feed-item" style="grid-column: 1/-1; text-align: center; font-style: italic; color: #666;">
+                    ... and 67 more system services in the <a href="general/" style="color: #0071e3;">general/</a> directory
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; color: #86868b; margin-top: 40px; padding-top: 20px; border-top: 1px solid #d2d2d7;">
+            <p>🔄 Feeds are automatically updated with the latest Apple system status information</p>
+            <p>📡 Subscribe to any feed in your RSS reader to get real-time notifications</p>
+            <p>📊 Data sourced from <a href="https://www.apple.com/support/systemstatus/" style="color: #0071e3;">Apple System Status</a></p>
+        </div>
+    </div>
+</body>
+</html> 
