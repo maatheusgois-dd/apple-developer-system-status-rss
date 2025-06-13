@@ -7,13 +7,13 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 23:43:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 23:55:18 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Maps API: All systems operational</title>
       <link>https://developer.apple.com/maps/</link>
       <description>No current issues reported for Apple Maps API</description>
-      <guid isPermaLink="false">Apple Maps API-no-events-2025-06-13T23:43:05.339418+00:00</guid>
-      <pubDate>Fri, 13 Jun 2025 23:43:05 +0000</pubDate>
+      <guid isPermaLink="false">Apple Maps API-no-events-2025-06-13T23:55:18.841238+00:00</guid>
+      <pubDate>Fri, 13 Jun 2025 23:55:18 +0000</pubDate>
     </item>
   </channel>
 </rss>
