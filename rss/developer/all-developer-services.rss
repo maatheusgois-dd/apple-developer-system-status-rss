@@ -2,375 +2,375 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Apple Developer System Status – All Developer Services</title>
-    <link>https://www.apple.com/support/systemstatus/</link>
+    <link>https://developer.apple.com/system-status/</link>
     <description>Latest updates for all Apple Developer services</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 21:31:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 21:44:03 +0000</lastBuildDate>
     <item>
       <title>🟢 Xcode Automatic Configuration: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/xcode/</link>
       <description>✅ Xcode Automatic Configuration is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Xcode Automatic Configuration-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Xcode Automatic Configuration-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 WeatherKit: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/weatherkit/</link>
       <description>✅ WeatherKit is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">WeatherKit-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">WeatherKit-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Videos: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/videos/</link>
       <description>✅ Videos is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Videos-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Videos-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Tap to Pay on iPhone: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>✅ Tap to Pay on iPhone is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Tap to Pay on iPhone-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Tap to Pay on iPhone-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Software Downloads: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/download/</link>
       <description>✅ Software Downloads is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Software Downloads-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Software Downloads-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 SKAdNetwork: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>✅ SKAdNetwork is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">SKAdNetwork-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">SKAdNetwork-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Program Enrollment and Renewals: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/enroll/</link>
       <description>✅ Program Enrollment and Renewals is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Program Enrollment and Renewals-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Program Enrollment and Renewals-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 NFC &amp; SE Platform: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/support/nfc-se-platform/</link>
       <description>✅ NFC &amp; SE Platform is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">NFC &amp; SE Platform-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">NFC &amp; SE Platform-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 MFi Portal: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>✅ MFi Portal is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">MFi Portal-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">MFi Portal-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 MapKit JS Dashboard: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://maps.developer.apple.com</link>
       <description>✅ MapKit JS Dashboard is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">MapKit JS Dashboard-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">MapKit JS Dashboard-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Feedback Assistant: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://bugreport.apple.com/</link>
       <description>✅ Feedback Assistant is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Feedback Assistant-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Feedback Assistant-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Device Enrollment Program: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>✅ Device Enrollment Program is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Device Enrollment Program-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Device Enrollment Program-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Developer ID Notary Service: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>✅ Developer ID Notary Service is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Developer ID Notary Service-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Developer ID Notary Service-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Developer Documentation: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/reference</link>
       <description>✅ Developer Documentation is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Developer Documentation-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Developer Documentation-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Contact Us: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/contact/</link>
       <description>✅ Contact Us is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Contact Us-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Contact Us-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Code-level Support: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/account/?view=support</link>
       <description>✅ Code-level Support is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Code-level Support-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Code-level Support-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 CloudKit Database: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/icloud/cloudkit/</link>
       <description>✅ CloudKit Database is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">CloudKit Database-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">CloudKit Database-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 CloudKit Console: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://icloud.developer.apple.com/dashboard</link>
       <description>✅ CloudKit Console is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">CloudKit Console-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">CloudKit Console-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Certificates, Identifiers &amp; Profiles: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/account/</link>
       <description>✅ Certificates, Identifiers &amp; Profiles is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Certificates, Identifiers &amp; Profiles-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Certificates, Identifiers &amp; Profiles-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Pay Sandbox Instance: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/apple-pay/sandbox-testing/</link>
       <description>✅ Apple Pay Sandbox Instance is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Pay Sandbox Instance-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Apple Pay Sandbox Instance-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Pay Production Instance: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/apple-pay/</link>
       <description>✅ Apple Pay Production Instance is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Pay Production Instance-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Apple Pay Production Instance-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Pay Developer | Apple Pay Demo: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link> https://applepaydemo.apple.com</link>
       <description>✅ Apple Pay Developer | Apple Pay Demo is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Pay Developer | Apple Pay Demo-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Apple Pay Developer | Apple Pay Demo-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Maps API: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/maps/</link>
       <description>✅ Apple Maps API is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Maps API-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Apple Maps API-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Developer Forums: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://forums.developer.apple.com</link>
       <description>✅ Apple Developer Forums is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Developer Forums-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Apple Developer Forums-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect - TestFlight: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/testflight/</link>
       <description>✅ App Store Connect - TestFlight is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store Connect - TestFlight-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store Connect - TestFlight-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect - Sales and Trends: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://appstoreconnect.apple.com/trends</link>
       <description>✅ App Store Connect - Sales and Trends is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store Connect - Sales and Trends-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store Connect - Sales and Trends-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect - App Upload: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>✅ App Store Connect - App Upload is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store Connect - App Upload-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store Connect - App Upload-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect - App Processing : Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>✅ App Store Connect - App Processing  is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store Connect - App Processing -operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store Connect - App Processing -operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect - Analytics: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://appstoreconnect.apple.com/analytics</link>
       <description>✅ App Store Connect - Analytics is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store Connect - Analytics-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store Connect - Analytics-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Automatic App Updates: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/app-store/app-updates/</link>
       <description>✅ App Store Automatic App Updates is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store Automatic App Updates-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store Automatic App Updates-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store - Server Notifications: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link> https://developer.apple.com/documentation/appstoreservernotifications</link>
       <description>✅ App Store - Server Notifications is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store - Server Notifications-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store - Server Notifications-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store - Server APIs: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/documentation/appstoreserverapi</link>
       <description>✅ App Store - Server APIs is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store - Server APIs-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store - Server APIs-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store - Sandbox: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link> https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox</link>
       <description>✅ App Store - Sandbox is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store - Sandbox-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store - Sandbox-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store - Receipt Verification: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/documentation/appstorereceipts/verifyreceipt</link>
       <description>✅ App Store - Receipt Verification is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store - Receipt Verification-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store - Receipt Verification-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store - In-App Purchases: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>✅ App Store - In-App Purchases is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store - In-App Purchases-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store - In-App Purchases-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store - Advanced Commerce API: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/documentation/advancedcommerceapi/</link>
       <description>✅ App Store - Advanced Commerce API is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store - Advanced Commerce API-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Store - Advanced Commerce API-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Attest: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/documentation/devicecheck</link>
       <description>✅ App Attest is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Attest-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">App Attest-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 APNS Sandbox: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/notifications/</link>
       <description>✅ APNS Sandbox is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">APNS Sandbox-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">APNS Sandbox-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 APNS: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/notifications/</link>
       <description>✅ APNS is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">APNS-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">APNS-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Account: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/account/</link>
       <description>✅ Account is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Account-operational-1749850317788</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:00 +0000</pubDate>
+      <guid isPermaLink="false">Account-operational-1749816000000</guid>
+      <pubDate>Fri, 13 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Xcode Cloud: Outage (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/xcode-cloud/</link>
       <description>Started: 06/12/2025 11:30 PDT
 
 Ended: 06/12/2025 14:30 PDT
@@ -379,11 +379,11 @@ This service was disrupted, but is now stable.
 
 Some users were affected</description>
       <guid isPermaLink="false">Xcode Cloud-1000004909-1749753000000</guid>
-      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Podcasts Connect: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>Started: 06/12/2025 11:43 PDT
 
 Ended: 06/12/2025 13:23 PDT
@@ -394,11 +394,11 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Podcasts Connect-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Music for Artists: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>Started: 06/12/2025 11:43 PDT
 
 Ended: 06/12/2025 13:23 PDT
@@ -409,11 +409,11 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Music for Artists-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Music API: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/musickit/</link>
       <description>Started: 06/12/2025 11:43 PDT
 
 Ended: 06/12/2025 13:23 PDT
@@ -424,11 +424,11 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Music API-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect API: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/app-store-connect/api/</link>
       <description>Started: 06/12/2025 11:43 PDT
 
 Ended: 06/12/2025 13:23 PDT
@@ -439,11 +439,11 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">App Store Connect API-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://appstoreconnect.apple.com </link>
       <description>Started: 06/12/2025 11:43 PDT
 
 Ended: 06/12/2025 13:23 PDT
@@ -454,11 +454,11 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">App Store Connect-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 News Publisher: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/news-publisher/</link>
       <description>Started: 06/12/2025 12:05 PDT
 
 Ended: 06/12/2025 13:35 PDT
@@ -469,11 +469,11 @@ Some users were affected
 
 Affected Services: Apple News API, News Publisher</description>
       <guid isPermaLink="false">News Publisher-1000004910-1749755100000</guid>
-      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple News API: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>Started: 06/12/2025 12:05 PDT
 
 Ended: 06/12/2025 13:35 PDT
@@ -484,7 +484,7 @@ Some users were affected
 
 Affected Services: Apple News API, News Publisher</description>
       <guid isPermaLink="false">Apple News API-1000004910-1749755100000</guid>
-      <pubDate>Fri, 13 Jun 2025 01:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

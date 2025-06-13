@@ -2,18 +2,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Apple Developer Status – Apple Pay Production Instance</title>
-    <link>https://www.apple.com/support/systemstatus/</link>
+    <link>https://developer.apple.com/apple-pay/</link>
     <description>Latest updates for Apple Pay Production Instance</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 21:31:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 21:44:03 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Pay Production Instance: All systems operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/apple-pay/</link>
       <description>No current issues reported for Apple Pay Production Instance</description>
-      <guid isPermaLink="false">Apple Pay Production Instance-no-events-2025-06-13T21:31:57.770679+00:00</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:57 +0000</pubDate>
+      <guid isPermaLink="false">Apple Pay Production Instance-no-events-2025-06-13T21:44:03.803781+00:00</guid>
+      <pubDate>Fri, 13 Jun 2025 21:44:03 +0000</pubDate>
     </item>
   </channel>
 </rss>

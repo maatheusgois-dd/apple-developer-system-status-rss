@@ -7,13 +7,13 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 21:31:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 21:44:03 +0000</lastBuildDate>
     <item>
       <title>🟢 Radio: All systems operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>No current issues reported for Radio</description>
-      <guid isPermaLink="false">Radio-no-events-2025-06-13T21:31:57.835958+00:00</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:57 +0000</pubDate>
+      <guid isPermaLink="false">Radio-no-events-2025-06-13T21:44:03.817177+00:00</guid>
+      <pubDate>Fri, 13 Jun 2025 21:44:03 +0000</pubDate>
     </item>
   </channel>
 </rss>

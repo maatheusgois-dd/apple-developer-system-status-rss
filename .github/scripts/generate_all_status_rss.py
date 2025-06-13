@@ -31,12 +31,23 @@ def fetch_and_parse_status(url, callback_name='jsonCallback'):
         print(f"💥 ERROR fetching {url}: {e}", file=sys.stderr)
         return None
 
-def create_service_feed(service, service_type, base_url='https://www.apple.com/support/systemstatus/'):
+def create_service_feed(service, service_type, base_url=None):
     """Create RSS feed for a single service"""
+    # Set correct base URL based on service type
+    if base_url is None:
+        if service_type == 'Developer':
+            base_url = 'https://developer.apple.com/system-status/'
+        else:
+            base_url = 'https://www.apple.com/support/systemstatus/'
+    
     fg = FeedGenerator()
     service_name = service.get('serviceName', 'Unknown Service')
+    
+    # Use service-specific redirectUrl if available, otherwise fall back to base_url
+    service_url = service.get('redirectUrl') or base_url
+    
     fg.title(f'Apple {service_type} Status – {service_name}')
-    fg.link(href=base_url, rel='alternate')
+    fg.link(href=service_url, rel='alternate')
     fg.description(f'Latest updates for {service_name}')
     fg.language('en')
     
@@ -56,15 +67,28 @@ def create_service_feed(service, service_type, base_url='https://www.apple.com/s
             event_status = event.get('eventStatus', 'unknown')
             
             e.title(f"{status_emoji} {service_name}: {status_type} ({event_status})")
-            e.link(href=base_url)
+            e.link(href=service_url)
             
             # Parse date
             try:
                 date_str = event.get('datePosted', '')
                 if date_str:
                     # Parse format like "06/13/2025 01:00 PDT"
-                    clean_date = date_str.replace(' PDT', '').replace(' PST', '')
-                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
+                    if ' PDT' in date_str:
+                        clean_date = date_str.replace(' PDT', '')
+                        dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M')
+                        # PDT is UTC-7
+                        dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-7)))
+                        dt = dt.astimezone(timezone.utc)
+                    elif ' PST' in date_str:
+                        clean_date = date_str.replace(' PST', '')
+                        dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M')
+                        # PST is UTC-8
+                        dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-8)))
+                        dt = dt.astimezone(timezone.utc)
+                    else:
+                        # Assume UTC if no timezone specified
+                        dt = datetime.datetime.strptime(date_str, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
                 else:
                     # Fall back to epoch timestamp
                     epoch_start = event.get('epochStartDate', 0)
@@ -100,7 +124,7 @@ def create_service_feed(service, service_type, base_url='https://www.apple.com/s
         e = fg.add_entry()
         e.id(f"{service_name}-no-events-{now.isoformat()}")
         e.title(f"🟢 {service_name}: All systems operational")
-        e.link(href=base_url)
+        e.link(href=service_url)
         e.pubDate(now)
         e.description(f"No current issues reported for {service_name}")
     
@@ -108,9 +132,17 @@ def create_service_feed(service, service_type, base_url='https://www.apple.com/s
 
 def create_aggregate_feed(services, title_suffix, service_type):
     """Create aggregated RSS feed for multiple services"""
+    # Set correct base URL based on service type
+    if service_type == 'Developer':
+        base_url = 'https://developer.apple.com/system-status/'
+    elif service_type == 'All':
+        base_url = 'https://www.apple.com/support/systemstatus/'
+    else:
+        base_url = 'https://www.apple.com/support/systemstatus/'
+    
     fg = FeedGenerator()
     fg.title(f'Apple {service_type} System Status – {title_suffix}')
-    fg.link(href='https://www.apple.com/support/systemstatus/', rel='alternate')
+    fg.link(href=base_url, rel='alternate')
     fg.description(f'Latest updates for all Apple {service_type} services')
     fg.language('en')
     
@@ -127,22 +159,26 @@ def create_aggregate_feed(services, title_suffix, service_type):
             for event in events:
                 event_copy = event.copy()
                 event_copy['_serviceName'] = service_name
+                event_copy['_serviceUrl'] = service.get('redirectUrl') or base_url
                 all_events.append(event_copy)
     
     # Add operational status for services without events
-    now = datetime.datetime.now(timezone.utc)
+    # Use a fixed "status check" time that's more meaningful than "now"
+    status_check_time = datetime.datetime.now(timezone.utc).replace(hour=12, minute=0, second=0, microsecond=0)
+    
     for service in services:
         service_name = service.get('serviceName', 'Unknown Service')
         if service_name not in services_with_events:
-            # Create a fake event for operational status
+            # Create a status entry for operational services
             operational_event = {
                 '_serviceName': service_name,
+                '_serviceUrl': service.get('redirectUrl') or base_url,
                 'messageId': 'operational',
-                'epochStartDate': int(now.timestamp() * 1000),
+                'epochStartDate': int(status_check_time.timestamp() * 1000),
                 'eventStatus': 'operational',
                 'statusType': 'Operational',
-                'datePosted': now.strftime('%m/%d/%Y %H:%M UTC'),
-                'message': f'All systems operational for {service_name}',
+                'datePosted': status_check_time.strftime('%m/%d/%Y %H:%M UTC'),
+                'message': f'Service is operating normally',
                 'usersAffected': None,
                 'affectedServices': None
             }
@@ -181,21 +217,39 @@ def create_aggregate_feed(services, title_suffix, service_type):
             status_emoji = "🔴"
             status_text = f"{event.get('statusType', 'Issue')} ({event.get('eventStatus', 'unknown')})"
         
+        service_specific_url = event.get('_serviceUrl', base_url)
+        
         e.title(f"{status_emoji} {service_name}: {status_text}")
-        e.link(href='https://www.apple.com/support/systemstatus/')
+        e.link(href=service_specific_url)
         e.id(f"{service_name}-{event.get('messageId', '')}-{event.get('epochStartDate', '')}")
         
         # Parse date
         try:
             date_str = event.get('datePosted', '')
             if date_str:
-                clean_date = date_str.replace(' PDT', '').replace(' PST', '').replace(' UTC', '')
-                dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
+                if ' PDT' in date_str:
+                    clean_date = date_str.replace(' PDT', '')
+                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M')
+                    # PDT is UTC-7
+                    dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-7)))
+                    dt = dt.astimezone(timezone.utc)
+                elif ' PST' in date_str:
+                    clean_date = date_str.replace(' PST', '')
+                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M')
+                    # PST is UTC-8
+                    dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-8)))
+                    dt = dt.astimezone(timezone.utc)
+                elif ' UTC' in date_str:
+                    clean_date = date_str.replace(' UTC', '')
+                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
+                else:
+                    # Assume UTC if no timezone specified
+                    dt = datetime.datetime.strptime(date_str, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
             else:
                 epoch_start = event.get('epochStartDate', 0)
-                dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else now
+                dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else status_check_time
         except Exception:
-            dt = now
+            dt = status_check_time
         
         e.pubDate(dt)
         

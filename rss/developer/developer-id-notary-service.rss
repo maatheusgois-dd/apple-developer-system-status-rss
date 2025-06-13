@@ -2,18 +2,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Apple Developer Status – Developer ID Notary Service</title>
-    <link>https://www.apple.com/support/systemstatus/</link>
+    <link>https://developer.apple.com/system-status/</link>
     <description>Latest updates for Developer ID Notary Service</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 21:31:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 21:44:03 +0000</lastBuildDate>
     <item>
       <title>🟢 Developer ID Notary Service: All systems operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
+      <link>https://developer.apple.com/system-status/</link>
       <description>No current issues reported for Developer ID Notary Service</description>
-      <guid isPermaLink="false">Developer ID Notary Service-no-events-2025-06-13T21:31:57.780836+00:00</guid>
-      <pubDate>Fri, 13 Jun 2025 21:31:57 +0000</pubDate>
+      <guid isPermaLink="false">Developer ID Notary Service-no-events-2025-06-13T21:44:03.805260+00:00</guid>
+      <pubDate>Fri, 13 Jun 2025 21:44:03 +0000</pubDate>
     </item>
   </channel>
 </rss>
