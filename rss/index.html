@@ -14,7 +14,11 @@
             border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
         }
         h1 { color: #1d1d1f; text-align: center; margin-bottom: 10px; }
-        .subtitle { text-align: center; color: #86868b; margin-bottom: 30px; }
+        .subtitle { text-align: center; color: #86868b; margin-bottom: 15px; }
+        .last-updated { 
+            text-align: center; color: #86868b; font-size: 0.9em; 
+            margin-bottom: 25px; font-style: italic;
+        }
         .stats { text-align: center; margin-bottom: 30px; color: #86868b; }
         
         /* Search */
@@ -90,6 +94,7 @@
     <div class="container">
         <h1>🍎 Apple System Status RSS Feeds</h1>
         <p class="subtitle">Real-time RSS feeds for all Apple services - updated automatically every 15 minutes</p>
+        <p class="last-updated" id="last-updated">Last updated: <span id="update-time">Jun 13, 2025, 09:03 PM UTC</span></p>
         
         <div class="stats">
             📊 130 individual RSS feeds covering all Apple services
@@ -369,6 +374,24 @@
         renderFeeds(generalFeeds, 'general-feeds', 'general/');
         renderFeeds(developerFeeds, 'developer-feeds-tab', 'developer/');
         renderFeeds(generalFeeds, 'general-feeds-tab', 'general/');
+
+        // Set last updated timestamp
+        function updateTimestamp() {
+            const now = new Date();
+            const options = {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                timeZoneName: 'short'
+            };
+            const timestamp = now.toLocaleDateString('en-US', options);
+            document.getElementById('update-time').textContent = "Jun 13, 2025, 09:03 PM UTC";
+        }
+        
+        // Update timestamp on page load
+        updateTimestamp();
 
         // Tab functionality
         function showTab(tabName) {

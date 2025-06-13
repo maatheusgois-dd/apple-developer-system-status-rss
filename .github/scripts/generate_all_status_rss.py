@@ -206,6 +206,37 @@ def sanitize_filename(name):
     name = name.replace('"', '')
     return name.lower()
 
+def update_index_timestamp():
+    """Update the index.html with the actual generation timestamp"""
+    try:
+        index_path = 'rss/index.html'
+        if os.path.exists(index_path):
+            with open(index_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Generate timestamp in UTC
+            now = datetime.datetime.now(timezone.utc)
+            timestamp = now.strftime('%b %d, %Y, %I:%M %p UTC')
+            
+            # Replace the JavaScript timestamp function with actual timestamp
+            updated_content = content.replace(
+                'document.getElementById(\'update-time\').textContent = timestamp;',
+                f'document.getElementById(\'update-time\').textContent = "{timestamp}";'
+            )
+            
+            # Also update the loading text directly
+            updated_content = updated_content.replace(
+                'Last updated: <span id="update-time">Loading...</span>',
+                f'Last updated: <span id="update-time">{timestamp}</span>'
+            )
+            
+            with open(index_path, 'w', encoding='utf-8') as f:
+                f.write(updated_content)
+            
+            print(f"✅ Updated index.html timestamp: {timestamp}")
+    except Exception as e:
+        print(f"⚠️  Warning: Could not update index.html timestamp: {e}")
+
 def main():
     # URLs for both developer and general system status
     developer_url = 'https://www.apple.com/support/systemstatus/data/developer/system_status_en_US.js'
@@ -298,6 +329,9 @@ def main():
     print(f"\n✅ Generated {len(generated_feeds)} RSS feeds:")
     for feed in generated_feeds:
         print(f"  📄 {feed}")
+    
+    # Update the index.html with the actual generation timestamp
+    update_index_timestamp()
 
 if __name__ == '__main__':
     main() 
