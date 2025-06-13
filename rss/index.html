@@ -94,7 +94,7 @@
     <div class="container">
         <h1>🍎 Apple System Status RSS Feeds</h1>
         <p class="subtitle">Real-time RSS feeds for all Apple services - updated automatically every 15 minutes</p>
-        <p class="last-updated" id="last-updated">Last updated: <span id="update-time">Jun 13, 2025, 09:19 PM UTC</span></p>
+        <p class="last-updated" id="last-updated">Last updated: <span id="update-time">Loading...</span></p>
         
         <div class="stats">
             📊 130 individual RSS feeds covering all Apple services
@@ -118,21 +118,21 @@
                 <h2>🌟 Master Feeds</h2>
                 <div class="feed-grid">
                     <div class="feed-item master-feed" data-name="all apple services combined master">
-                        <a href="rss/all-apple-services.rss">
+                        <a href="all-apple-services.rss">
                             <span class="emoji">🔗</span>All Apple Services (Combined)
-                            <button class="copy-btn" onclick="copyToClipboard('rss/all-apple-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('all-apple-services.rss')">📋</button>
                         </a>
                     </div>
                     <div class="feed-item aggregate-feeds" data-name="all developer services aggregate">
-                        <a href="rss/developer/all-developer-services.rss">
+                        <a href="developer/all-developer-services.rss">
                             <span class="emoji">👨‍💻</span>All Developer Services
-                            <button class="copy-btn" onclick="copyToClipboard('rss/developer/all-developer-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('developer/all-developer-services.rss')">📋</button>
                         </a>
                     </div>
                     <div class="feed-item aggregate-feeds" data-name="all system services aggregate general">
-                        <a href="rss/general/all-system-services.rss">
+                        <a href="general/all-system-services.rss">
                             <span class="emoji">🖥️</span>All System Services
-                            <button class="copy-btn" onclick="copyToClipboard('rss/general/all-system-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('general/all-system-services.rss')">📋</button>
                         </a>
                     </div>
                 </div>
@@ -159,27 +159,27 @@
                 <h2>🌟 Master & Aggregate Feeds</h2>
                 <div class="feed-grid">
                     <div class="feed-item master-feed">
-                        <a href="rss/all-apple-services.rss">
+                        <a href="all-apple-services.rss">
                             <span class="emoji">🔗</span>All Apple Services (Combined)
-                            <button class="copy-btn" onclick="copyToClipboard('rss/all-apple-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('all-apple-services.rss')">📋</button>
                         </a>
                         <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
                             Latest updates from all 127 Apple services (Developer + General)
                         </div>
                     </div>
                     <div class="feed-item aggregate-feeds">
-                        <a href="rss/developer/all-developer-services.rss">
+                        <a href="developer/all-developer-services.rss">
                             <span class="emoji">👨‍💻</span>All Developer Services
-                            <button class="copy-btn" onclick="copyToClipboard('rss/developer/all-developer-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('developer/all-developer-services.rss')">📋</button>
                         </a>
                         <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
                             All 48 developer-focused Apple services
                         </div>
                     </div>
                     <div class="feed-item aggregate-feeds">
-                        <a href="rss/general/all-system-services.rss">
+                        <a href="general/all-system-services.rss">
                             <span class="emoji">🖥️</span>All System Services
-                            <button class="copy-btn" onclick="copyToClipboard('rss/general/all-system-services.rss')">📋</button>
+                            <button class="copy-btn" onclick="copyToClipboard('general/all-system-services.rss')">📋</button>
                         </a>
                         <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
                             All 79 general consumer Apple services
@@ -370,10 +370,46 @@
         }
 
         // Initialize feeds
-        renderFeeds(developerFeeds, 'developer-feeds', 'rss/developer/');
-        renderFeeds(generalFeeds, 'general-feeds', 'rss/general/');
-        renderFeeds(developerFeeds, 'developer-feeds-tab', 'rss/developer/');
-        renderFeeds(generalFeeds, 'general-feeds-tab', 'rss/general/');
+        renderFeeds(developerFeeds, 'developer-feeds', 'developer/');
+        renderFeeds(generalFeeds, 'general-feeds', 'general/');
+        renderFeeds(developerFeeds, 'developer-feeds-tab', 'developer/');
+        renderFeeds(generalFeeds, 'general-feeds-tab', 'general/');
+
+        // Fetch and display real last updated timestamp from RSS feed
+        async function fetchLastUpdated() {
+            try {
+                const response = await fetch('all-apple-services.rss');
+                const rssText = await response.text();
+                
+                // Parse the XML to get lastBuildDate
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(rssText, 'text/xml');
+                const lastBuildDate = xmlDoc.querySelector('lastBuildDate');
+                
+                if (lastBuildDate) {
+                    const date = new Date(lastBuildDate.textContent);
+                    const options = {
+                        year: 'numeric',
+                        month: 'short', 
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        timeZone: 'UTC',
+                        timeZoneName: 'short'
+                    };
+                    const formattedDate = date.toLocaleDateString('en-US', options);
+                    document.getElementById('update-time').textContent = formattedDate;
+                } else {
+                    document.getElementById('update-time').textContent = 'Unable to fetch timestamp';
+                }
+            } catch (error) {
+                console.error('Error fetching RSS timestamp:', error);
+                document.getElementById('update-time').textContent = 'Error loading timestamp';
+            }
+        }
+
+        // Fetch timestamp on page load
+        fetchLastUpdated();
 
         // Tab functionality
         function showTab(tabName) {

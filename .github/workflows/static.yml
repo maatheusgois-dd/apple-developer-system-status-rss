@@ -40,11 +40,11 @@ jobs:
           # Create a clean deployment directory
           mkdir -p _site
           
-          # Copy the main index.html (now in root)
-          cp index.html _site/index.html
+          # Copy RSS files and structure (including index.html)
+          cp -r rss/* _site/
           
-          # Copy RSS files and structure
-          cp -r rss _site/rss
+          # Copy the index.html to root for main page access
+          cp rss/index.html _site/index.html
           
           # Copy README for documentation
           cp README.md _site/

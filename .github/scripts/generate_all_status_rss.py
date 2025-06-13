@@ -206,59 +206,6 @@ def sanitize_filename(name):
     name = name.replace('"', '')
     return name.lower()
 
-def update_index_timestamp():
-    """Update the index.html with the actual generation timestamp"""
-    try:
-        # Try multiple possible paths for index.html (now in root)
-        possible_paths = ['index.html', './index.html', '../index.html']
-        index_path = None
-        
-        for path in possible_paths:
-            if os.path.exists(path):
-                index_path = path
-                break
-        
-        if not index_path:
-            print(f"⚠️  Warning: Could not find index.html in any of these locations: {possible_paths}")
-            print(f"📂 Current working directory: {os.getcwd()}")
-            print(f"📁 Directory contents: {os.listdir('.')}")
-            if os.path.exists('rss'):
-                print(f"📁 RSS directory contents: {os.listdir('rss')}")
-            return
-        
-        print(f"📍 Found index.html at: {index_path}")
-        
-        with open(index_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        # Generate timestamp in UTC
-        now = datetime.datetime.now(timezone.utc)
-        timestamp = now.strftime('%b %d, %Y, %I:%M %p UTC')
-        
-        # Use regex to find and replace the timestamp more reliably
-        import re
-        
-        # Replace the span content directly
-        pattern = r'(<span id="update-time">)[^<]*(</span>)'
-        replacement = f'\\1{timestamp}\\2'
-        
-        if re.search(pattern, content):
-            updated_content = re.sub(pattern, replacement, content)
-            
-            with open(index_path, 'w', encoding='utf-8') as f:
-                f.write(updated_content)
-            
-            print(f"✅ Updated index.html timestamp: {timestamp}")
-            print(f"📄 Updated file at: {os.path.abspath(index_path)}")
-        else:
-            print(f"⚠️  Warning: Could not find timestamp span in index.html")
-            # Fallback: add timestamp at the end if pattern not found
-            print(f"📝 Content preview: {content[:200]}...")
-            
-    except Exception as e:
-        print(f"⚠️  Warning: Could not update index.html timestamp: {e}")
-        import traceback
-        print(f"🔍 Full error: {traceback.format_exc()}")
 
 def main():
     # URLs for both developer and general system status
@@ -352,9 +299,6 @@ def main():
     print(f"\n✅ Generated {len(generated_feeds)} RSS feeds:")
     for feed in generated_feeds:
         print(f"  📄 {feed}")
-    
-    # Update the index.html with the actual generation timestamp
-    update_index_timestamp()
 
 if __name__ == '__main__':
     main() 
