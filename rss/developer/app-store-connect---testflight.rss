@@ -5,15 +5,15 @@
     <link>https://developer.apple.com/testflight/</link>
     <description>Latest updates for App Store Connect - TestFlight</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
-    <generator>python-feedgen</generator>
+    <generator>micro-optimized-rss</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 21:54:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 22:11:43 +0000</lastBuildDate>
     <item>
       <title>🟢 App Store Connect - TestFlight: All systems operational</title>
       <link>https://developer.apple.com/testflight/</link>
       <description>No current issues reported for App Store Connect - TestFlight</description>
-      <guid isPermaLink="false">App Store Connect - TestFlight-no-events-2025-06-13T21:54:49.268315+00:00</guid>
-      <pubDate>Fri, 13 Jun 2025 21:54:49 +0000</pubDate>
+      <guid isPermaLink="false">App Store Connect - TestFlight-no-events-2025-06-13T22:11:43.875869+00:00</guid>
+      <pubDate>Fri, 13 Jun 2025 22:11:43 +0000</pubDate>
     </item>
   </channel>
 </rss>
