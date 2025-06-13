@@ -31,13 +31,33 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      
+      - name: Prepare deployment
+        run: |
+          # Create a clean deployment directory
+          mkdir -p _site
+          
+          # Copy RSS files and structure
+          cp -r rss/* _site/
+          
+          # Copy the index.html to root for main page
+          cp rss/index.html _site/index.html
+          
+          # Copy README for documentation
+          cp README.md _site/
+          
+          echo "✅ Prepared deployment with RSS feeds and web interface"
+          ls -la _site/
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload the prepared site
+          path: '_site'
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
