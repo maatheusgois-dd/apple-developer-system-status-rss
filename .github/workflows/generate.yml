@@ -1,0 +1,93 @@
+name: Generate App Attest RSS
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes
+  workflow_dispatch:       # manual trigger, optional
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # so we can push back
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install requests feedgen
+
+      - name: Fetch status and generate RSS
+        run: |
+          python - << 'EOF'
+          import requests, json, datetime
+          from feedgen.feed import FeedGenerator
+
+          # 1. Download the JS file
+          url = 'https://www.apple.com/support/systemstatus/data/developer/system_status_en_US.js'
+          txt = requests.get(url).text
+
+          # 2. Peel off the "var systemStatus = …;" wrapper
+          prefix = 'var systemStatus = '
+          if txt.startswith(prefix):
+              body = txt[len(prefix):].rstrip().rstrip(';')
+              data = json.loads(body)
+          else:
+              data = json.loads(txt)
+
+          # 3. Find the App Attest component
+          components = data.get('components', [])
+          app_attest = next((c for c in components if 'App Attest' in c.get('name','')), None)
+
+          # 4. Build RSS feed
+          fg = FeedGenerator()
+          fg.title('Apple Developer System Status – App Attest')
+          fg.link(href='https://www.apple.com/support/systemstatus/', rel='alternate')
+          fg.description('Latest updates for Apple App Attest')
+          fg.language('en')
+
+          if app_attest:
+              for u in app_attest.get('updates', []):
+                  e = fg.add_entry()
+                  e.id(u.get('number','') + u.get('date',''))
+                  e.title(f"{app_attest['name']}: {u.get('message','')}")
+                  e.link(href='https://www.apple.com/support/systemstatus/')
+                  # parse date like "2025-06-13T10:00:00Z"
+                  try:
+                      dt = datetime.datetime.fromisoformat(u.get('date').replace('Z','+00:00'))
+                  except:
+                      dt = datetime.datetime.utcnow()
+                  e.pubDate(dt)
+                  e.description(u.get('message',''))
+          else:
+              # fallback entry if component not found
+              e = fg.add_entry()
+              now = datetime.datetime.utcnow()
+              e.id(now.isoformat())
+              e.title('App Attest status not found')
+              e.link(href='https://www.apple.com/support/systemstatus/')
+              e.pubDate(now)
+              e.description('No App Attest component could be located in the system status feed.')
+
+          # 5. Write RSS to file
+          rss = fg.rss_str(pretty=True)
+          with open('app-attest-status.rss', 'wb') as f:
+              f.write(rss)
+          EOF
+
+      - name: Commit and push RSS
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add app-attest-status.rss
+          git commit -m "chore: update App Attest RSS feed [skip ci]" || echo "No changes to commit"
+          git push
