@@ -31,9 +31,6 @@ jobs:
       - name: Generate all RSS feeds
         run: python .github/scripts/generate_all_status_rss.py
 
-      - name: Generate legacy App Attest RSS (for compatibility)
-        run: python .github/scripts/generate_app_attest_rss.py
-
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
