@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Jun 2025 22:55:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 23:24:20 +0000</lastBuildDate>
     <item>
       <title>🟢 macOS Software Update: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -471,7 +471,7 @@ Some users were affected
 
 Affected Services: iCloud Calendar, iCloud Contacts</description>
       <guid isPermaLink="false">iCloud Contacts-2000004680-1749753300000</guid>
-      <pubDate>Sat, 14 Jun 2025 21:53:00 +0000</pubDate>
+      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 iCloud Calendar: Issue (resolved)</title>
@@ -486,7 +486,7 @@ Some users were affected
 
 Affected Services: iCloud Calendar, iCloud Contacts</description>
       <guid isPermaLink="false">iCloud Calendar-2000004680-1749753300000</guid>
-      <pubDate>Sat, 14 Jun 2025 21:53:00 +0000</pubDate>
+      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple School Manager: Issue (resolved)</title>
@@ -501,7 +501,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-1000004911-1749787620000</guid>
-      <pubDate>Sat, 14 Jun 2025 21:53:00 +0000</pubDate>
+      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -516,33 +516,37 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-1000004911-1749787620000</guid>
-      <pubDate>Sat, 14 Jun 2025 21:53:00 +0000</pubDate>
+      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🟠 Apple School Manager: Issue (ongoing)</title>
+      <title>🟢 Apple School Manager: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>Started: 06/14/2025 13:32 PDT
 
-Users may be experiencing a problem with this service. 
+Ended: 06/14/2025 15:55 PDT
 
-Some users are affected
+Users may have experienced a problem with this service.
+
+Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-2000004682-1749933120000</guid>
-      <pubDate>Sat, 14 Jun 2025 21:53:00 +0000</pubDate>
+      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🟠 Apple Business Manager: Issue (ongoing)</title>
+      <title>🟢 Apple Business Manager: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>Started: 06/14/2025 13:32 PDT
 
-Users may be experiencing a problem with this service. 
+Ended: 06/14/2025 15:55 PDT
 
-Some users are affected
+Users may have experienced a problem with this service.
+
+Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-2000004682-1749933120000</guid>
-      <pubDate>Sat, 14 Jun 2025 21:53:00 +0000</pubDate>
+      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
