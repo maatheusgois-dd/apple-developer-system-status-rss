@@ -7,13 +7,13 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Jun 2025 22:21:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 22:43:12 +0000</lastBuildDate>
     <item>
       <title>🟢 MFi Portal: All systems operational</title>
       <link>https://developer.apple.com/system-status/</link>
       <description>No current issues reported for MFi Portal</description>
-      <guid isPermaLink="false">MFi Portal-no-events-2025-06-14T22:21:58.247682+00:00</guid>
-      <pubDate>Sat, 14 Jun 2025 22:21:58 +0000</pubDate>
+      <guid isPermaLink="false">MFi Portal-no-events-2025-06-14T22:43:12.075215+00:00</guid>
+      <pubDate>Sat, 14 Jun 2025 22:43:12 +0000</pubDate>
     </item>
   </channel>
 </rss>
