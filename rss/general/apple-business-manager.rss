@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Jun 2025 21:20:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 21:40:25 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -21,20 +21,22 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-1000004911-1749787620000</guid>
-      <pubDate>Sat, 14 Jun 2025 21:05:00 +0000</pubDate>
+      <pubDate>Sat, 14 Jun 2025 21:36:00 +0000</pubDate>
     </item>
     <item>
-      <title>🟠 Apple Business Manager: Issue (ongoing)</title>
+      <title>🟢 Apple Business Manager: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>Started: 06/14/2025 13:32 PDT
 
-Users may be experiencing a problem with this service. 
+Ended: 06/14/2025 14:20 PDT
 
-Some users are affected
+Users may have experienced a problem with this service.
+
+Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-2000004682-1749933120000</guid>
-      <pubDate>Sat, 14 Jun 2025 21:05:00 +0000</pubDate>
+      <pubDate>Sat, 14 Jun 2025 21:36:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
