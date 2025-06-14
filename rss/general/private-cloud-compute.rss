@@ -7,13 +7,13 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Jun 2025 01:56:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 03:15:23 +0000</lastBuildDate>
     <item>
       <title>🟢 Private Cloud Compute: All systems operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>No current issues reported for Private Cloud Compute</description>
-      <guid isPermaLink="false">Private Cloud Compute-no-events-2025-06-14T01:56:42.028461+00:00</guid>
-      <pubDate>Sat, 14 Jun 2025 01:56:42 +0000</pubDate>
+      <guid isPermaLink="false">Private Cloud Compute-no-events-2025-06-14T03:15:23.367628+00:00</guid>
+      <pubDate>Sat, 14 Jun 2025 03:15:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
