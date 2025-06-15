@@ -7,79 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Jun 2025 07:52:31 +0000</lastBuildDate>
-    <item>
-      <title>🟢 Apple Messages for Business: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Messages for Business is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Messages for Business-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Invites: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Invites is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Invites-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Fitness+: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Fitness+ is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Fitness+-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Cash: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Cash is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Cash-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Card: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Card is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Card-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Business Essentials: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Business Essentials is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Business Essentials-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Books: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Books is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Books-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Arcade: Operational</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Arcade is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Arcade-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 15 Jun 2025 08:28:29 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Account Card: Operational</title>
       <link>https://developer.apple.com/news-publisher/</link>
@@ -105,6 +33,15 @@ No current issues reported</description>
 
 No current issues reported</description>
       <guid isPermaLink="false">App Store-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Xcode Cloud: Operational</title>
+      <link>https://developer.apple.com/xcode-cloud/</link>
+      <description>✅ Xcode Cloud is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Xcode Cloud-operational-1749988800000</guid>
       <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
@@ -177,6 +114,15 @@ No current issues reported</description>
 
 No current issues reported</description>
       <guid isPermaLink="false">NFC &amp; SE Platform-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 News Publisher: Operational</title>
+      <link>https://developer.apple.com/news-publisher/</link>
+      <description>✅ News Publisher is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">News Publisher-operational-1749988800000</guid>
       <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
@@ -279,6 +225,15 @@ No current issues reported</description>
       <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>🟢 Apple Podcasts Connect: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Podcasts Connect is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Podcasts Connect-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>🟢 Apple Pay Sandbox Instance: Operational</title>
       <link>https://developer.apple.com/apple-pay/sandbox-testing/</link>
       <description>✅ Apple Pay Sandbox Instance is operating normally
@@ -306,6 +261,33 @@ No current issues reported</description>
       <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>🟢 Apple News API: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple News API is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple News API-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Music for Artists: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Music for Artists is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Music for Artists-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 Apple Music API: Operational</title>
+      <link>https://developer.apple.com/musickit/</link>
+      <description>✅ Apple Music API is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Music API-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>🟢 Apple Maps API: Operational</title>
       <link>https://developer.apple.com/maps/</link>
       <description>✅ Apple Maps API is operating normally
@@ -321,6 +303,15 @@ No current issues reported</description>
 
 No current issues reported</description>
       <guid isPermaLink="false">Apple Developer Forums-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 App Store Connect API: Operational</title>
+      <link>https://developer.apple.com/app-store-connect/api/</link>
+      <description>✅ App Store Connect API is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">App Store Connect API-operational-1749988800000</guid>
       <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
@@ -366,6 +357,15 @@ No current issues reported</description>
 
 No current issues reported</description>
       <guid isPermaLink="false">App Store Connect - Analytics-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟢 App Store Connect: Operational</title>
+      <link>https://appstoreconnect.apple.com </link>
+      <description>✅ App Store Connect is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">App Store Connect-operational-1749988800000</guid>
       <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
@@ -459,154 +459,6 @@ No current issues reported</description>
       <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🟢 Xcode Cloud: Outage (resolved)</title>
-      <link>https://developer.apple.com/xcode-cloud/</link>
-      <description>Started: 06/12/2025 11:30 PDT
-
-Ended: 06/12/2025 14:30 PDT
-
-This service was disrupted, but is now stable.
-
-Some users were affected</description>
-      <guid isPermaLink="false">Xcode Cloud-1000004909-1749753000000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 iCloud Contacts: Issue (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>Started: 06/12/2025 11:35 PDT
-
-Ended: 06/12/2025 13:20 PDT
-
-Users may have experienced a problem with this service.
-
-Some users were affected
-
-Affected Services: iCloud Calendar, iCloud Contacts</description>
-      <guid isPermaLink="false">iCloud Contacts-2000004680-1749753300000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 iCloud Calendar: Issue (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>Started: 06/12/2025 11:35 PDT
-
-Ended: 06/12/2025 13:20 PDT
-
-Users did not receive push notifications.
-
-Some users were affected
-
-Affected Services: iCloud Calendar, iCloud Contacts</description>
-      <guid isPermaLink="false">iCloud Calendar-2000004680-1749753300000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Podcasts Connect: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>Started: 06/12/2025 11:43 PDT
-
-Ended: 06/12/2025 13:23 PDT
-
-Users experienced a problem with this service.
-
-Some users were affected
-
-Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
-      <guid isPermaLink="false">Apple Podcasts Connect-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Music for Artists: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>Started: 06/12/2025 11:43 PDT
-
-Ended: 06/12/2025 13:23 PDT
-
-Apple Music for Artists was unavailable due to scheduled maintenance
-
-Some users were affected
-
-Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
-      <guid isPermaLink="false">Apple Music for Artists-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple Music API: Performance (resolved)</title>
-      <link>https://developer.apple.com/musickit/</link>
-      <description>Started: 06/12/2025 11:43 PDT
-
-Ended: 06/12/2025 13:23 PDT
-
-Users experienced a problem with this service.
-
-Some users were affected
-
-Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
-      <guid isPermaLink="false">Apple Music API-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 App Store Connect API: Performance (resolved)</title>
-      <link>https://developer.apple.com/app-store-connect/api/</link>
-      <description>Started: 06/12/2025 11:43 PDT
-
-Ended: 06/12/2025 13:23 PDT
-
-Users experienced a problem with this service.
-
-Some users were affected
-
-Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
-      <guid isPermaLink="false">App Store Connect API-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 App Store Connect: Performance (resolved)</title>
-      <link>https://appstoreconnect.apple.com </link>
-      <description>Started: 06/12/2025 11:43 PDT
-
-Ended: 06/12/2025 13:23 PDT
-
-Users experienced a problem with this service.
-
-Some users were affected
-
-Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
-      <guid isPermaLink="false">App Store Connect-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 News Publisher: Performance (resolved)</title>
-      <link>https://developer.apple.com/news-publisher/</link>
-      <description>Started: 06/12/2025 12:05 PDT
-
-Ended: 06/12/2025 13:35 PDT
-
-Users experienced a problem with this service.
-
-Some users were affected
-
-Affected Services: Apple News API, News Publisher</description>
-      <guid isPermaLink="false">News Publisher-1000004910-1749755100000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🟢 Apple News API: Performance (resolved)</title>
-      <link>https://www.apple.com/support/systemstatus/</link>
-      <description>Started: 06/12/2025 12:05 PDT
-
-Ended: 06/12/2025 13:35 PDT
-
-We performed routine maintenance, with no user impact.
-
-Some users were affected
-
-Affected Services: Apple News API, News Publisher</description>
-      <guid isPermaLink="false">Apple News API-1000004910-1749755100000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
-    </item>
-    <item>
       <title>🟢 Apple School Manager: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>Started: 06/12/2025 21:07 PDT
@@ -619,7 +471,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-1000004911-1749787620000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -634,7 +486,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-1000004911-1749787620000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple School Manager: Issue (resolved)</title>
@@ -649,7 +501,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-2000004682-1749933120000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -664,7 +516,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-2000004682-1749933120000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟠 App Attest: Performance (ongoing)</title>
@@ -675,7 +527,7 @@ Users may be experiencing issues with the service. We are working to resolve the
 
 Some users are affected</description>
       <guid isPermaLink="false">App Attest-2000004683-1749945600000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
