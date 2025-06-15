@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Jun 2025 04:51:58 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jun 2025 05:22:23 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Invites: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -469,7 +469,7 @@ This service was disrupted, but is now stable.
 
 Some users were affected</description>
       <guid isPermaLink="false">Xcode Cloud-1000004909-1749753000000</guid>
-      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 iCloud Contacts: Issue (resolved)</title>
@@ -484,7 +484,7 @@ Some users were affected
 
 Affected Services: iCloud Calendar, iCloud Contacts</description>
       <guid isPermaLink="false">iCloud Contacts-2000004680-1749753300000</guid>
-      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 iCloud Calendar: Issue (resolved)</title>
@@ -499,7 +499,7 @@ Some users were affected
 
 Affected Services: iCloud Calendar, iCloud Contacts</description>
       <guid isPermaLink="false">iCloud Calendar-2000004680-1749753300000</guid>
-      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Podcasts Connect: Performance (resolved)</title>
@@ -514,7 +514,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Podcasts Connect-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Music for Artists: Performance (resolved)</title>
@@ -529,7 +529,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Music for Artists-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Music API: Performance (resolved)</title>
@@ -544,7 +544,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Music API-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect API: Performance (resolved)</title>
@@ -559,7 +559,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">App Store Connect API-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect: Performance (resolved)</title>
@@ -574,7 +574,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">App Store Connect-2000004679-1749753780000</guid>
-      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 News Publisher: Performance (resolved)</title>
@@ -589,7 +589,7 @@ Some users were affected
 
 Affected Services: Apple News API, News Publisher</description>
       <guid isPermaLink="false">News Publisher-1000004910-1749755100000</guid>
-      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple News API: Performance (resolved)</title>
@@ -604,7 +604,7 @@ Some users were affected
 
 Affected Services: Apple News API, News Publisher</description>
       <guid isPermaLink="false">Apple News API-1000004910-1749755100000</guid>
-      <pubDate>Fri, 13 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple School Manager: Issue (resolved)</title>
@@ -619,7 +619,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-1000004911-1749787620000</guid>
-      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -634,7 +634,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-1000004911-1749787620000</guid>
-      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple School Manager: Issue (resolved)</title>
@@ -649,7 +649,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-2000004682-1749933120000</guid>
-      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -664,7 +664,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-2000004682-1749933120000</guid>
-      <pubDate>Sat, 14 Jun 2025 23:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
