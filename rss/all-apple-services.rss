@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Jun 2025 13:52:31 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jun 2025 14:19:56 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Account Card: Operational</title>
       <link>https://developer.apple.com/news-publisher/</link>
@@ -471,7 +471,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-1000004911-1749787620000</guid>
-      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -486,7 +486,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-1000004911-1749787620000</guid>
-      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple School Manager: Issue (resolved)</title>
@@ -501,7 +501,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-2000004682-1749933120000</guid>
-      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -516,7 +516,7 @@ Some users were affected
 
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-2000004682-1749933120000</guid>
-      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0000</pubDate>
     </item>
     <item>
       <title>🟠 App Attest: Performance (ongoing)</title>
@@ -527,7 +527,7 @@ Users may be experiencing issues with the service. We are working to resolve the
 
 Some users are affected</description>
       <guid isPermaLink="false">App Attest-2000004683-1749945600000</guid>
-      <pubDate>Sun, 15 Jun 2025 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
