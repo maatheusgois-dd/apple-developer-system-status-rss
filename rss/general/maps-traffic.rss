@@ -7,13 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Jun 2025 20:24:43 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jun 2025 20:52:36 +0000</lastBuildDate>
     <item>
-      <title>🟢 Maps Traffic: All systems operational</title>
+      <title>🟢 Maps Traffic: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
-      <description>No current issues reported for Maps Traffic</description>
-      <guid isPermaLink="false">Maps Traffic-no-events-2025-06-15T20:24:43.658939+00:00</guid>
-      <pubDate>Sun, 15 Jun 2025 20:24:43 +0000</pubDate>
+      <description>✅ Maps Traffic is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Maps Traffic-operational-1750020756104</guid>
+      <pubDate>Sun, 15 Jun 2025 20:52:36 +0000</pubDate>
     </item>
   </channel>
 </rss>

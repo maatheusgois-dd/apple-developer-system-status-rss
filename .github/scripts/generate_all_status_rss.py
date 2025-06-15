@@ -90,7 +90,7 @@ def create_service_feed(service, service_type, base_url=None):
                         # Assume UTC if no timezone specified
                         dt = datetime.datetime.strptime(date_str, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
                 else:
-                    # Fall back to epoch timestamp
+                    # Fall back to epoch timestamp or current time
                     epoch_start = event.get('epochStartDate', 0)
                     dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else datetime.datetime.now(timezone.utc)
             except Exception:
@@ -122,11 +122,11 @@ def create_service_feed(service, service_type, base_url=None):
         # No events - add a placeholder entry
         now = datetime.datetime.now(timezone.utc)
         e = fg.add_entry()
-        e.id(f"{service_name}-no-events-{now.isoformat()}")
-        e.title(f"🟢 {service_name}: All systems operational")
+        e.id(f"{service_name}-operational-{int(now.timestamp() * 1000)}")
+        e.title(f"🟢 {service_name}: Operational")
         e.link(href=service_url)
         e.pubDate(now)
-        e.description(f"No current issues reported for {service_name}")
+        e.description(f"✅ {service_name} is operating normally\n\nNo current issues reported")
     
     return fg
 
@@ -163,8 +163,7 @@ def create_aggregate_feed(services, title_suffix, service_type):
                 all_events.append(event_copy)
     
     # Add operational status for services without events
-    # Use a fixed "status check" time that's more meaningful than "now"
-    status_check_time = datetime.datetime.now(timezone.utc).replace(hour=12, minute=0, second=0, microsecond=0)
+    now = datetime.datetime.now(timezone.utc)
     
     for service in services:
         service_name = service.get('serviceName', 'Unknown Service')
@@ -174,10 +173,10 @@ def create_aggregate_feed(services, title_suffix, service_type):
                 '_serviceName': service_name,
                 '_serviceUrl': service.get('redirectUrl') or base_url,
                 'messageId': 'operational',
-                'epochStartDate': int(status_check_time.timestamp() * 1000),
+                'epochStartDate': int(now.timestamp() * 1000),
                 'eventStatus': 'operational',
                 'statusType': 'Operational',
-                'datePosted': status_check_time.strftime('%m/%d/%Y %H:%M UTC'),
+                'datePosted': now.strftime('%m/%d/%Y %H:%M UTC'),
                 'message': f'Service is operating normally',
                 'usersAffected': None,
                 'affectedServices': None
@@ -247,9 +246,9 @@ def create_aggregate_feed(services, title_suffix, service_type):
                     dt = datetime.datetime.strptime(date_str, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
             else:
                 epoch_start = event.get('epochStartDate', 0)
-                dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else status_check_time
+                dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else now
         except Exception:
-            dt = status_check_time
+            dt = now
         
         e.pubDate(dt)
         
