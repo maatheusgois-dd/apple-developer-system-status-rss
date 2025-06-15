@@ -7,13 +7,13 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Jun 2025 05:22:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jun 2025 05:44:24 +0000</lastBuildDate>
     <item>
       <title>🟢 iCloud Private Relay: All systems operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>No current issues reported for iCloud Private Relay</description>
-      <guid isPermaLink="false">iCloud Private Relay-no-events-2025-06-15T05:22:23.491174+00:00</guid>
-      <pubDate>Sun, 15 Jun 2025 05:22:23 +0000</pubDate>
+      <guid isPermaLink="false">iCloud Private Relay-no-events-2025-06-15T05:44:24.922832+00:00</guid>
+      <pubDate>Sun, 15 Jun 2025 05:44:24 +0000</pubDate>
     </item>
   </channel>
 </rss>

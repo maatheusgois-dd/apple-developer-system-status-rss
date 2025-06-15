@@ -7,7 +7,16 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Jun 2025 05:22:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jun 2025 05:44:24 +0000</lastBuildDate>
+    <item>
+      <title>🟢 Apple Messages for Business: Operational</title>
+      <link>https://www.apple.com/support/systemstatus/</link>
+      <description>✅ Apple Messages for Business is operating normally
+
+No current issues reported</description>
+      <guid isPermaLink="false">Apple Messages for Business-operational-1749988800000</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>🟢 Apple Invites: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -423,15 +432,6 @@ No current issues reported</description>
       <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🟢 App Attest: Operational</title>
-      <link>https://developer.apple.com/documentation/devicecheck</link>
-      <description>✅ App Attest is operating normally
-
-No current issues reported</description>
-      <guid isPermaLink="false">App Attest-operational-1749988800000</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>🟢 APNS Sandbox: Operational</title>
       <link>https://developer.apple.com/notifications/</link>
       <description>✅ APNS Sandbox is operating normally
@@ -469,7 +469,7 @@ This service was disrupted, but is now stable.
 
 Some users were affected</description>
       <guid isPermaLink="false">Xcode Cloud-1000004909-1749753000000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 iCloud Contacts: Issue (resolved)</title>
@@ -514,7 +514,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Podcasts Connect-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Music for Artists: Performance (resolved)</title>
@@ -529,7 +529,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Music for Artists-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple Music API: Performance (resolved)</title>
@@ -544,7 +544,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">Apple Music API-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect API: Performance (resolved)</title>
@@ -559,7 +559,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">App Store Connect API-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 App Store Connect: Performance (resolved)</title>
@@ -574,7 +574,7 @@ Some users were affected
 
 Affected Services: App Store Connect, App Store Connect API, Apple Music API, Apple Music for Artists, Apple Podcasts Connect</description>
       <guid isPermaLink="false">App Store Connect-2000004679-1749753780000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 News Publisher: Performance (resolved)</title>
@@ -589,7 +589,7 @@ Some users were affected
 
 Affected Services: Apple News API, News Publisher</description>
       <guid isPermaLink="false">News Publisher-1000004910-1749755100000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple News API: Performance (resolved)</title>
@@ -604,7 +604,7 @@ Some users were affected
 
 Affected Services: Apple News API, News Publisher</description>
       <guid isPermaLink="false">Apple News API-1000004910-1749755100000</guid>
-      <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
     <item>
       <title>🟢 Apple School Manager: Issue (resolved)</title>
@@ -665,6 +665,17 @@ Some users were affected
 Affected Services: Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-2000004682-1749933120000</guid>
       <pubDate>Sun, 15 Jun 2025 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🟠 App Attest: Performance (ongoing)</title>
+      <link>https://developer.apple.com/documentation/devicecheck</link>
+      <description>Started: 06/14/2025 17:00 PDT
+
+Users may be experiencing issues with the service. We are working to resolve the problem.
+
+Some users are affected</description>
+      <guid isPermaLink="false">App Attest-2000004683-1749945600000</guid>
+      <pubDate>Sun, 15 Jun 2025 05:39:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
