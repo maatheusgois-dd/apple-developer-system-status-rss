@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Jun 2025 20:52:36 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jun 2025 20:58:48 +0000</lastBuildDate>
     <item>
       <title>🟢 Dictation: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Dictation is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Dictation-operational-1750020756094</guid>
-      <pubDate>Sun, 15 Jun 2025 20:52:36 +0000</pubDate>
+      <guid isPermaLink="false">Dictation-operational-1750021128737</guid>
+      <pubDate>Sun, 15 Jun 2025 13:58:48 -0700</pubDate>
     </item>
   </channel>
 </rss>

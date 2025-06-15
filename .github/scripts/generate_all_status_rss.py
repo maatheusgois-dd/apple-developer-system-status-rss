@@ -7,6 +7,10 @@ from datetime import timezone
 import requests
 import os
 from feedgen.feed import FeedGenerator
+import zoneinfo
+
+# Get PDT timezone
+PDT = zoneinfo.ZoneInfo("America/Los_Angeles")
 
 def fetch_and_parse_status(url, callback_name='jsonCallback'):
     """Fetch and parse system status data from Apple"""
@@ -73,28 +77,22 @@ def create_service_feed(service, service_type, base_url=None):
             try:
                 date_str = event.get('datePosted', '')
                 if date_str:
-                    # Parse format like "06/13/2025 01:00 PDT"
+                    # Keep original timezone (PDT/PST)
                     if ' PDT' in date_str:
                         clean_date = date_str.replace(' PDT', '')
-                        dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M')
-                        # PDT is UTC-7
-                        dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-7)))
-                        dt = dt.astimezone(timezone.utc)
+                        dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=PDT)
                     elif ' PST' in date_str:
                         clean_date = date_str.replace(' PST', '')
-                        dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M')
-                        # PST is UTC-8
-                        dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-8)))
-                        dt = dt.astimezone(timezone.utc)
+                        dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=PDT)
                     else:
-                        # Assume UTC if no timezone specified
-                        dt = datetime.datetime.strptime(date_str, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
+                        # Assume PDT if no timezone specified
+                        dt = datetime.datetime.strptime(date_str, '%m/%d/%Y %H:%M').replace(tzinfo=PDT)
                 else:
-                    # Fall back to epoch timestamp or current time
+                    # Fall back to epoch timestamp
                     epoch_start = event.get('epochStartDate', 0)
-                    dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else datetime.datetime.now(timezone.utc)
+                    dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=PDT) if epoch_start else datetime.datetime.now(tz=PDT)
             except Exception:
-                dt = datetime.datetime.now(timezone.utc)
+                dt = datetime.datetime.now(tz=PDT)
             
             e.pubDate(dt)
             
@@ -120,7 +118,7 @@ def create_service_feed(service, service_type, base_url=None):
             e.description('\n\n'.join(description_parts))
     else:
         # No events - add a placeholder entry
-        now = datetime.datetime.now(timezone.utc)
+        now = datetime.datetime.now(tz=PDT)
         e = fg.add_entry()
         e.id(f"{service_name}-operational-{int(now.timestamp() * 1000)}")
         e.title(f"🟢 {service_name}: Operational")
@@ -163,7 +161,7 @@ def create_aggregate_feed(services, title_suffix, service_type):
                 all_events.append(event_copy)
     
     # Add operational status for services without events
-    now = datetime.datetime.now(timezone.utc)
+    now = datetime.datetime.now(tz=PDT)
     
     for service in services:
         service_name = service.get('serviceName', 'Unknown Service')
@@ -176,7 +174,7 @@ def create_aggregate_feed(services, title_suffix, service_type):
                 'epochStartDate': int(now.timestamp() * 1000),
                 'eventStatus': 'operational',
                 'statusType': 'Operational',
-                'datePosted': now.strftime('%m/%d/%Y %H:%M UTC'),
+                'datePosted': now.strftime('%m/%d/%Y %H:%M PDT'),
                 'message': f'Service is operating normally',
                 'usersAffected': None,
                 'affectedServices': None
@@ -226,27 +224,19 @@ def create_aggregate_feed(services, title_suffix, service_type):
         try:
             date_str = event.get('datePosted', '')
             if date_str:
+                # Keep original timezone (PDT/PST)
                 if ' PDT' in date_str:
                     clean_date = date_str.replace(' PDT', '')
-                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M')
-                    # PDT is UTC-7
-                    dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-7)))
-                    dt = dt.astimezone(timezone.utc)
+                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=PDT)
                 elif ' PST' in date_str:
                     clean_date = date_str.replace(' PST', '')
-                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M')
-                    # PST is UTC-8
-                    dt = dt.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=-8)))
-                    dt = dt.astimezone(timezone.utc)
-                elif ' UTC' in date_str:
-                    clean_date = date_str.replace(' UTC', '')
-                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
+                    dt = datetime.datetime.strptime(clean_date, '%m/%d/%Y %H:%M').replace(tzinfo=PDT)
                 else:
-                    # Assume UTC if no timezone specified
-                    dt = datetime.datetime.strptime(date_str, '%m/%d/%Y %H:%M').replace(tzinfo=timezone.utc)
+                    # Assume PDT if no timezone specified
+                    dt = datetime.datetime.strptime(date_str, '%m/%d/%Y %H:%M').replace(tzinfo=PDT)
             else:
                 epoch_start = event.get('epochStartDate', 0)
-                dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=timezone.utc) if epoch_start else now
+                dt = datetime.datetime.fromtimestamp(epoch_start / 1000.0, tz=PDT) if epoch_start else now
         except Exception:
             dt = now
         
