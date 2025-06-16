@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Jun 2025 17:44:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 17:56:17 +0000</lastBuildDate>
     <item>
       <title>🟢 Audiobooks: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Audiobooks is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Audiobooks-operational-1750095843601</guid>
-      <pubDate>Mon, 16 Jun 2025 10:44:03 -0700</pubDate>
+      <guid isPermaLink="false">Audiobooks-operational-1750096577652</guid>
+      <pubDate>Mon, 16 Jun 2025 10:56:17 -0700</pubDate>
     </item>
   </channel>
 </rss>
