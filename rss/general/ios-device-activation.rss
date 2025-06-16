@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Jun 2025 14:28:36 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 14:47:47 +0000</lastBuildDate>
     <item>
       <title>🟢 iOS Device Activation: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ iOS Device Activation is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">iOS Device Activation-operational-1750084116083</guid>
-      <pubDate>Mon, 16 Jun 2025 07:28:36 -0700</pubDate>
+      <guid isPermaLink="false">iOS Device Activation-operational-1750085267162</guid>
+      <pubDate>Mon, 16 Jun 2025 07:47:47 -0700</pubDate>
     </item>
   </channel>
 </rss>
