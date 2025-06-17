@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Jun 2025 16:31:34 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jun 2025 16:59:01 +0000</lastBuildDate>
     <item>
       <title>🟢 NFC &amp; SE Platform: Operational</title>
       <link>https://developer.apple.com/support/nfc-se-platform/</link>
       <description>✅ NFC &amp; SE Platform is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">NFC &amp; SE Platform-operational-1750177894699</guid>
-      <pubDate>Tue, 17 Jun 2025 09:31:34 -0700</pubDate>
+      <guid isPermaLink="false">NFC &amp; SE Platform-operational-1750179541120</guid>
+      <pubDate>Tue, 17 Jun 2025 09:59:01 -0700</pubDate>
     </item>
   </channel>
 </rss>
