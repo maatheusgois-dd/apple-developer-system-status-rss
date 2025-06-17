@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Jun 2025 13:35:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jun 2025 13:55:47 +0000</lastBuildDate>
     <item>
       <title>🟢 App Attest: Performance (resolved)</title>
       <link>https://developer.apple.com/documentation/devicecheck</link>
@@ -19,7 +19,7 @@ Users may have experienced issues with the service.
 
 Some users were affected</description>
       <guid isPermaLink="false">App Attest-2000004683-1749945600000</guid>
-      <pubDate>Tue, 17 Jun 2025 01:00:00 -0700</pubDate>
+      <pubDate>Tue, 17 Jun 2025 06:36:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
