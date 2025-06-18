@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Jun 2025 04:59:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2025 05:30:22 +0000</lastBuildDate>
     <item>
       <title>🟢 Developer ID Notary Service: Operational</title>
       <link>https://developer.apple.com/system-status/</link>
       <description>✅ Developer ID Notary Service is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Developer ID Notary Service-operational-1750222776028</guid>
-      <pubDate>Tue, 17 Jun 2025 21:59:36 -0700</pubDate>
+      <guid isPermaLink="false">Developer ID Notary Service-operational-1750224622940</guid>
+      <pubDate>Tue, 17 Jun 2025 22:30:22 -0700</pubDate>
     </item>
   </channel>
 </rss>
