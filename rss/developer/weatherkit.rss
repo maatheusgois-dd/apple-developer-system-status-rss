@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Jun 2025 22:22:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2025 22:44:22 +0000</lastBuildDate>
     <item>
       <title>🟢 WeatherKit: Operational</title>
       <link>https://developer.apple.com/weatherkit/</link>
       <description>✅ WeatherKit is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">WeatherKit-operational-1750285358507</guid>
-      <pubDate>Wed, 18 Jun 2025 15:22:38 -0700</pubDate>
+      <guid isPermaLink="false">WeatherKit-operational-1750286662567</guid>
+      <pubDate>Wed, 18 Jun 2025 15:44:22 -0700</pubDate>
     </item>
   </channel>
 </rss>
