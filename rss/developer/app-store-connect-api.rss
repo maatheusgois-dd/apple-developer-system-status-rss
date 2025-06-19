@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Jun 2025 15:56:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jun 2025 16:33:04 +0000</lastBuildDate>
     <item>
       <title>🟢 App Store Connect API: Operational</title>
       <link>https://developer.apple.com/app-store-connect/api/</link>
       <description>✅ App Store Connect API is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store Connect API-operational-1750348572497</guid>
-      <pubDate>Thu, 19 Jun 2025 08:56:12 -0700</pubDate>
+      <guid isPermaLink="false">App Store Connect API-operational-1750350784442</guid>
+      <pubDate>Thu, 19 Jun 2025 09:33:04 -0700</pubDate>
     </item>
   </channel>
 </rss>
