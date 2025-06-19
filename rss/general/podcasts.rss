@@ -7,15 +7,17 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Jun 2025 23:25:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jun 2025 23:42:47 +0000</lastBuildDate>
     <item>
-      <title>🟢 Podcasts: Operational</title>
+      <title>🟠 Podcasts: Performance (ongoing)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Podcasts is operating normally
+      <description>Started: 06/19/2025 16:28 PDT
 
-No current issues reported</description>
-      <guid isPermaLink="false">Podcasts-operational-1750375548387</guid>
-      <pubDate>Thu, 19 Jun 2025 16:25:48 -0700</pubDate>
+Some users may be experiencing issues with this service. 
+
+Some users are affected</description>
+      <guid isPermaLink="false">Podcasts-2000004688-1750375680000</guid>
+      <pubDate>Thu, 19 Jun 2025 16:39:00 -0700</pubDate>
     </item>
   </channel>
 </rss>

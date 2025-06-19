@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Jun 2025 23:25:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jun 2025 23:42:47 +0000</lastBuildDate>
     <item>
       <title>🟢 iCloud Mail: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -19,7 +19,7 @@ Users may have experienced delays sending iCloud mail.
 
 Some users were affected</description>
       <guid isPermaLink="false">iCloud Mail-2000004685-1750263360000</guid>
-      <pubDate>Thu, 19 Jun 2025 11:30:00 -0700</pubDate>
+      <pubDate>Thu, 19 Jun 2025 16:39:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
