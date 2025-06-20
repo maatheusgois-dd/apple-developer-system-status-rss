@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Jun 2025 04:37:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jun 2025 04:58:20 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Pay: Operational</title>
       <link>https://developer.apple.com/apple-pay/</link>
       <description>✅ Apple Pay is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Pay-operational-1750394231268</guid>
-      <pubDate>Thu, 19 Jun 2025 21:37:11 -0700</pubDate>
+      <guid isPermaLink="false">Apple Pay-operational-1750395500471</guid>
+      <pubDate>Thu, 19 Jun 2025 21:58:20 -0700</pubDate>
     </item>
   </channel>
 </rss>
