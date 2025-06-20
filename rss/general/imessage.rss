@@ -7,15 +7,19 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Jun 2025 16:57:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jun 2025 17:24:28 +0000</lastBuildDate>
     <item>
-      <title>🟢 iMessage: Operational</title>
+      <title>🟢 iMessage: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ iMessage is operating normally
+      <description>Started: 06/20/2025 09:39 PDT
 
-No current issues reported</description>
-      <guid isPermaLink="false">iMessage-operational-1750438631353</guid>
-      <pubDate>Fri, 20 Jun 2025 09:57:11 -0700</pubDate>
+Users may have been unable to use this service.
+
+Some users were affected
+
+Affected Services: FaceTime, iMessage</description>
+      <guid isPermaLink="false">iMessage-2000004689-1750437540000</guid>
+      <pubDate>Fri, 20 Jun 2025 10:22:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
