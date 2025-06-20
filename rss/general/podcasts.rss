@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Jun 2025 07:55:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jun 2025 08:31:55 +0000</lastBuildDate>
     <item>
       <title>🟠 Podcasts: Performance (ongoing)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -17,7 +17,7 @@ Some users may be experiencing issues with this service.
 
 Some users are affected</description>
       <guid isPermaLink="false">Podcasts-2000004688-1750375680000</guid>
-      <pubDate>Thu, 19 Jun 2025 16:39:00 -0700</pubDate>
+      <pubDate>Fri, 20 Jun 2025 01:00:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
