@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Jun 2025 22:55:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 23:23:16 +0000</lastBuildDate>
     <item>
       <title>🟢 Software Downloads: Operational</title>
       <link>https://developer.apple.com/download/</link>
       <description>✅ Software Downloads is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Software Downloads-operational-1750546548851</guid>
-      <pubDate>Sat, 21 Jun 2025 15:55:48 -0700</pubDate>
+      <guid isPermaLink="false">Software Downloads-operational-1750548196836</guid>
+      <pubDate>Sat, 21 Jun 2025 16:23:16 -0700</pubDate>
     </item>
   </channel>
 </rss>
