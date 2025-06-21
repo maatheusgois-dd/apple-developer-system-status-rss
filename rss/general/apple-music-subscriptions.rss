@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Jun 2025 22:21:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 22:43:28 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Music Subscriptions: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Apple Music Subscriptions is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Music Subscriptions-operational-1750544486778</guid>
-      <pubDate>Sat, 21 Jun 2025 15:21:26 -0700</pubDate>
+      <guid isPermaLink="false">Apple Music Subscriptions-operational-1750545808845</guid>
+      <pubDate>Sat, 21 Jun 2025 15:43:28 -0700</pubDate>
     </item>
   </channel>
 </rss>
