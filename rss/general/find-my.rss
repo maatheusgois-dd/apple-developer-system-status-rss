@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Jun 2025 17:43:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Jun 2025 17:55:09 +0000</lastBuildDate>
     <item>
       <title>🟢 Find My: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Find My is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Find My-operational-1750614187864</guid>
-      <pubDate>Sun, 22 Jun 2025 10:43:07 -0700</pubDate>
+      <guid isPermaLink="false">Find My-operational-1750614909612</guid>
+      <pubDate>Sun, 22 Jun 2025 10:55:09 -0700</pubDate>
     </item>
   </channel>
 </rss>
