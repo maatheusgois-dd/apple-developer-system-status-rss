@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Jun 2025 06:35:13 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Jun 2025 06:56:03 +0000</lastBuildDate>
     <item>
       <title>🟢 Siri: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Siri is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Siri-operational-1750574113882</guid>
-      <pubDate>Sat, 21 Jun 2025 23:35:13 -0700</pubDate>
+      <guid isPermaLink="false">Siri-operational-1750575363125</guid>
+      <pubDate>Sat, 21 Jun 2025 23:56:03 -0700</pubDate>
     </item>
   </channel>
 </rss>
