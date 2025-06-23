@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Jun 2025 14:28:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 14:50:27 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Podcasts Connect: Operational</title>
       <link>https://developer.apple.com/system-status/</link>
       <description>✅ Apple Podcasts Connect is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Podcasts Connect-operational-1750688936335</guid>
-      <pubDate>Mon, 23 Jun 2025 07:28:56 -0700</pubDate>
+      <guid isPermaLink="false">Apple Podcasts Connect-operational-1750690227497</guid>
+      <pubDate>Mon, 23 Jun 2025 07:50:27 -0700</pubDate>
     </item>
   </channel>
 </rss>
