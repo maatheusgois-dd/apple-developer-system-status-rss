@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Jun 2025 04:21:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 04:55:19 +0000</lastBuildDate>
     <item>
       <title>🟢 App Attest: Operational</title>
       <link>https://developer.apple.com/documentation/devicecheck</link>
       <description>✅ App Attest is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Attest-operational-1750652463830</guid>
-      <pubDate>Sun, 22 Jun 2025 21:21:03 -0700</pubDate>
+      <guid isPermaLink="false">App Attest-operational-1750654519122</guid>
+      <pubDate>Sun, 22 Jun 2025 21:55:19 -0700</pubDate>
     </item>
   </channel>
 </rss>
