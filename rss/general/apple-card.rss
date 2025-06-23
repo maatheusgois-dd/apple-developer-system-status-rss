@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Jun 2025 22:45:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 23:19:41 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Card: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Apple Card is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Card-operational-1750718723037</guid>
-      <pubDate>Mon, 23 Jun 2025 15:45:23 -0700</pubDate>
+      <guid isPermaLink="false">Apple Card-operational-1750720781370</guid>
+      <pubDate>Mon, 23 Jun 2025 16:19:41 -0700</pubDate>
     </item>
   </channel>
 </rss>
