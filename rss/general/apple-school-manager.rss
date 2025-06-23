@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Jun 2025 06:59:30 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 07:29:32 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple School Manager: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Apple School Manager is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple School Manager-operational-1750661970580</guid>
-      <pubDate>Sun, 22 Jun 2025 23:59:30 -0700</pubDate>
+      <guid isPermaLink="false">Apple School Manager-operational-1750663772135</guid>
+      <pubDate>Mon, 23 Jun 2025 00:29:32 -0700</pubDate>
     </item>
   </channel>
 </rss>
