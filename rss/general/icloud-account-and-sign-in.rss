@@ -7,15 +7,19 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 19:52:39 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 20:27:09 +0000</lastBuildDate>
     <item>
-      <title>🟢 iCloud Account &amp; Sign In: Operational</title>
+      <title>🟠 iCloud Account &amp; Sign In: Issue (ongoing)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ iCloud Account &amp; Sign In is operating normally
+      <description>Started: 06/24/2025 11:36 PDT
 
-No current issues reported</description>
-      <guid isPermaLink="false">iCloud Account &amp; Sign In-operational-1750794759294</guid>
-      <pubDate>Tue, 24 Jun 2025 12:52:39 -0700</pubDate>
+Some users may be experiencing issues with this service. 
+
+Some users are affected
+
+Affected Services: Apple Business Essentials, Photos, iCloud Account &amp; Sign In, iCloud Mail, iCloud Storage Upgrades, iCloud Web Apps (iCloud.com), iWork for iCloud</description>
+      <guid isPermaLink="false">iCloud Account &amp; Sign In-2000004700-1750790160000</guid>
+      <pubDate>Tue, 24 Jun 2025 13:22:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
