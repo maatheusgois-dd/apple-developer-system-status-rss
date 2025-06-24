@@ -7,15 +7,17 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 21:55:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 22:23:09 +0000</lastBuildDate>
     <item>
-      <title>🟢 Developer ID Notary Service: Operational</title>
+      <title>🟠 Developer ID Notary Service: Outage (ongoing)</title>
       <link>https://developer.apple.com/system-status/</link>
-      <description>✅ Developer ID Notary Service is operating normally
+      <description>Started: 06/24/2025 12:16 PDT
 
-No current issues reported</description>
-      <guid isPermaLink="false">Developer ID Notary Service-operational-1750802103404</guid>
-      <pubDate>Tue, 24 Jun 2025 14:55:03 -0700</pubDate>
+Users may be experiencing issues with the service.  We are working to resolve the problem.
+
+All users are affected</description>
+      <guid isPermaLink="false">Developer ID Notary Service-2000004699-1750792560000</guid>
+      <pubDate>Tue, 24 Jun 2025 15:14:00 -0700</pubDate>
     </item>
   </channel>
 </rss>

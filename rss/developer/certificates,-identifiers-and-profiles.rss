@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 21:55:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 22:23:09 +0000</lastBuildDate>
     <item>
       <title>🟢 Certificates, Identifiers &amp; Profiles: Operational</title>
       <link>https://developer.apple.com/account/</link>
       <description>✅ Certificates, Identifiers &amp; Profiles is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Certificates, Identifiers &amp; Profiles-operational-1750802103403</guid>
-      <pubDate>Tue, 24 Jun 2025 14:55:03 -0700</pubDate>
+      <guid isPermaLink="false">Certificates, Identifiers &amp; Profiles-operational-1750803789100</guid>
+      <pubDate>Tue, 24 Jun 2025 15:23:09 -0700</pubDate>
     </item>
   </channel>
 </rss>
