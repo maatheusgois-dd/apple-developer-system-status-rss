@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 22:23:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 22:45:08 +0000</lastBuildDate>
     <item>
       <title>🟠 News Publisher: Issue (ongoing)</title>
       <link>https://developer.apple.com/news-publisher/</link>
@@ -19,7 +19,7 @@ Some users are affected
 
 Affected Services: Apple News API, News Publisher</description>
       <guid isPermaLink="false">News Publisher-1000004966-1750800540000</guid>
-      <pubDate>Tue, 24 Jun 2025 15:14:00 -0700</pubDate>
+      <pubDate>Tue, 24 Jun 2025 15:23:00 -0700</pubDate>
     </item>
   </channel>
 </rss>

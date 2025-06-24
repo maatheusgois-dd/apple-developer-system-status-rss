@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 22:23:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 22:45:08 +0000</lastBuildDate>
     <item>
       <title>🟢 News: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ News is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">News-operational-1750803789117</guid>
-      <pubDate>Tue, 24 Jun 2025 15:23:09 -0700</pubDate>
+      <guid isPermaLink="false">News-operational-1750805108467</guid>
+      <pubDate>Tue, 24 Jun 2025 15:45:08 -0700</pubDate>
     </item>
   </channel>
 </rss>
