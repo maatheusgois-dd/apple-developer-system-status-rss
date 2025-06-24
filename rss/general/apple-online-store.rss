@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 05:25:26 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 05:48:00 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Online Store: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Apple Online Store is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Online Store-operational-1750742726334</guid>
-      <pubDate>Mon, 23 Jun 2025 22:25:26 -0700</pubDate>
+      <guid isPermaLink="false">Apple Online Store-operational-1750744080915</guid>
+      <pubDate>Mon, 23 Jun 2025 22:48:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
