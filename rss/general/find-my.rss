@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 22:57:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 23:25:54 +0000</lastBuildDate>
     <item>
       <title>🟢 Find My: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -19,7 +19,7 @@ Users may have experienced a problem with this service.
 
 Some users were affected</description>
       <guid isPermaLink="false">Find My-1000004965-1750790400000</guid>
-      <pubDate>Tue, 24 Jun 2025 15:18:00 -0700</pubDate>
+      <pubDate>Tue, 24 Jun 2025 16:11:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
