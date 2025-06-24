@@ -7,15 +7,19 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 07:45:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 08:33:31 +0000</lastBuildDate>
     <item>
-      <title>🟢 Apple Business Essentials: Operational</title>
+      <title>🟠 Apple Business Essentials: Outage (ongoing)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
-      <description>✅ Apple Business Essentials is operating normally
+      <description>Started: 06/23/2025 23:54 PDT
 
-No current issues reported</description>
-      <guid isPermaLink="false">Apple Business Essentials-operational-1750751121372</guid>
-      <pubDate>Tue, 24 Jun 2025 00:45:21 -0700</pubDate>
+This service may be slow or unavailable.
+
+Some users are affected
+
+Affected Services: Apple Business Essentials, Apple Business Manager, Apple School Manager</description>
+      <guid isPermaLink="false">Apple Business Essentials-1000004963-1750748040000</guid>
+      <pubDate>Tue, 24 Jun 2025 01:05:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
