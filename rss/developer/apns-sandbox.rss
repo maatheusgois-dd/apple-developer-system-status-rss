@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 09:53:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 10:27:08 +0000</lastBuildDate>
     <item>
       <title>🟢 APNS Sandbox: Operational</title>
       <link>https://developer.apple.com/notifications/</link>
       <description>✅ APNS Sandbox is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">APNS Sandbox-operational-1750758795935</guid>
-      <pubDate>Tue, 24 Jun 2025 02:53:15 -0700</pubDate>
+      <guid isPermaLink="false">APNS Sandbox-operational-1750760828825</guid>
+      <pubDate>Tue, 24 Jun 2025 03:27:08 -0700</pubDate>
     </item>
   </channel>
 </rss>
