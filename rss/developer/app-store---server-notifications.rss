@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 02:00:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 03:32:22 +0000</lastBuildDate>
     <item>
       <title>🟢 App Store - Server Notifications: Operational</title>
       <link> https://developer.apple.com/documentation/appstoreservernotifications</link>
       <description>✅ App Store - Server Notifications is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store - Server Notifications-operational-1750730455555</guid>
-      <pubDate>Mon, 23 Jun 2025 19:00:55 -0700</pubDate>
+      <guid isPermaLink="false">App Store - Server Notifications-operational-1750735942019</guid>
+      <pubDate>Mon, 23 Jun 2025 20:32:22 -0700</pubDate>
     </item>
   </channel>
 </rss>
