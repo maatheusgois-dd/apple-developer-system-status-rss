@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Jun 2025 04:52:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 05:25:22 +0000</lastBuildDate>
     <item>
       <title>🟢 App Store - In-App Purchases: Operational</title>
       <link>https://developer.apple.com/system-status/</link>
       <description>✅ App Store - In-App Purchases is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">App Store - In-App Purchases-operational-1750827152430</guid>
-      <pubDate>Tue, 24 Jun 2025 21:52:32 -0700</pubDate>
+      <guid isPermaLink="false">App Store - In-App Purchases-operational-1750829122541</guid>
+      <pubDate>Tue, 24 Jun 2025 22:25:22 -0700</pubDate>
     </item>
   </channel>
 </rss>
