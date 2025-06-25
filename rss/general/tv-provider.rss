@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Jun 2025 21:54:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 22:22:59 +0000</lastBuildDate>
     <item>
       <title>🟢 TV Provider: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ TV Provider is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">TV Provider-operational-1750888477903</guid>
-      <pubDate>Wed, 25 Jun 2025 14:54:37 -0700</pubDate>
+      <guid isPermaLink="false">TV Provider-operational-1750890179685</guid>
+      <pubDate>Wed, 25 Jun 2025 15:22:59 -0700</pubDate>
     </item>
   </channel>
 </rss>
