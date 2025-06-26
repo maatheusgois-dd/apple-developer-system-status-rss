@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Jun 2025 23:54:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 01:59:55 +0000</lastBuildDate>
     <item>
       <title>🟢 Xcode Cloud: Operational</title>
       <link>https://developer.apple.com/xcode-cloud/</link>
       <description>✅ Xcode Cloud is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Xcode Cloud-operational-1750895692958</guid>
-      <pubDate>Wed, 25 Jun 2025 16:54:52 -0700</pubDate>
+      <guid isPermaLink="false">Xcode Cloud-operational-1750903195778</guid>
+      <pubDate>Wed, 25 Jun 2025 18:59:55 -0700</pubDate>
     </item>
   </channel>
 </rss>
