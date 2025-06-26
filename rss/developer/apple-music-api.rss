@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 01:59:55 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 03:22:18 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Music API: Operational</title>
       <link>https://developer.apple.com/musickit/</link>
       <description>✅ Apple Music API is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Music API-operational-1750903195765</guid>
-      <pubDate>Wed, 25 Jun 2025 18:59:55 -0700</pubDate>
+      <guid isPermaLink="false">Apple Music API-operational-1750908138111</guid>
+      <pubDate>Wed, 25 Jun 2025 20:22:18 -0700</pubDate>
     </item>
   </channel>
 </rss>
