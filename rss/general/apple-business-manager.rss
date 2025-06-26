@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 07:56:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 08:35:58 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Business Manager: Outage (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -21,7 +21,7 @@ Some users were affected
 
 Affected Services: Apple Business Essentials, Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-1000004963-1750748040000</guid>
-      <pubDate>Wed, 25 Jun 2025 16:42:00 -0700</pubDate>
+      <pubDate>Thu, 26 Jun 2025 01:00:00 -0700</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -36,7 +36,7 @@ Some users were affected
 
 Affected Services: Apple Business Essentials, Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-1000004964-1750778640000</guid>
-      <pubDate>Wed, 25 Jun 2025 16:42:00 -0700</pubDate>
+      <pubDate>Thu, 26 Jun 2025 01:00:00 -0700</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -51,7 +51,7 @@ Some users were affected
 
 Affected Services: Apple Business Essentials, Apple Business Manager</description>
       <guid isPermaLink="false">Apple Business Manager-2000004701-1750787700000</guid>
-      <pubDate>Wed, 25 Jun 2025 16:42:00 -0700</pubDate>
+      <pubDate>Thu, 26 Jun 2025 01:00:00 -0700</pubDate>
     </item>
     <item>
       <title>🟢 Apple Business Manager: Issue (resolved)</title>
@@ -66,7 +66,7 @@ Some users were affected
 
 Affected Services: Apple Business Essentials, Apple Business Manager, Photos, iCloud Account &amp; Sign In, iCloud Calendar, iCloud Contacts, iCloud Mail, iCloud Storage Upgrades, iCloud Web Apps (iCloud.com), iWork for iCloud</description>
       <guid isPermaLink="false">Apple Business Manager-2000004700-1750790160000</guid>
-      <pubDate>Wed, 25 Jun 2025 16:42:00 -0700</pubDate>
+      <pubDate>Thu, 26 Jun 2025 01:00:00 -0700</pubDate>
     </item>
     <item>
       <title>🟠 Apple Business Manager: Issue (ongoing)</title>
@@ -79,7 +79,7 @@ Some users are affected
 
 Affected Services: Apple Business Essentials, Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple Business Manager-1000004967-1750831800000</guid>
-      <pubDate>Wed, 25 Jun 2025 16:42:00 -0700</pubDate>
+      <pubDate>Thu, 26 Jun 2025 01:00:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
