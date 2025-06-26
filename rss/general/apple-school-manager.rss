@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 22:22:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 22:44:57 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple School Manager: Outage (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
@@ -21,7 +21,7 @@ Some users were affected
 
 Affected Services: Apple Business Essentials, Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-1000004963-1750748040000</guid>
-      <pubDate>Thu, 26 Jun 2025 01:00:00 -0700</pubDate>
+      <pubDate>Thu, 26 Jun 2025 15:32:00 -0700</pubDate>
     </item>
     <item>
       <title>🟢 Apple School Manager: Issue (resolved)</title>
@@ -36,20 +36,22 @@ Some users were affected
 
 Affected Services: Apple Business Essentials, Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-1000004964-1750778640000</guid>
-      <pubDate>Thu, 26 Jun 2025 01:00:00 -0700</pubDate>
+      <pubDate>Thu, 26 Jun 2025 15:32:00 -0700</pubDate>
     </item>
     <item>
-      <title>🟠 Apple School Manager: Issue (ongoing)</title>
+      <title>🟢 Apple School Manager: Issue (resolved)</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>Started: 06/24/2025 23:10 PDT
 
-Users are experiencing a problem with this service. We are investigating this issue.
+Ended: 06/25/2025 03:00 PDT
 
-Some users are affected
+Users experienced a problem with this service. We investigated and resolved this issue.
+
+Some users were affected
 
 Affected Services: Apple Business Essentials, Apple Business Manager, Apple School Manager</description>
       <guid isPermaLink="false">Apple School Manager-1000004967-1750831800000</guid>
-      <pubDate>Thu, 26 Jun 2025 01:00:00 -0700</pubDate>
+      <pubDate>Thu, 26 Jun 2025 15:32:00 -0700</pubDate>
     </item>
   </channel>
 </rss>
