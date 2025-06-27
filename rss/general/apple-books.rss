@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Jun 2025 08:34:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jun 2025 08:58:02 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Books: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Apple Books is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Books-operational-1751013245811</guid>
-      <pubDate>Fri, 27 Jun 2025 01:34:05 -0700</pubDate>
+      <guid isPermaLink="false">Apple Books-operational-1751014682037</guid>
+      <pubDate>Fri, 27 Jun 2025 01:58:02 -0700</pubDate>
     </item>
   </channel>
 </rss>
