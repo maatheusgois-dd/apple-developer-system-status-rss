@@ -7,21 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Jun 2025 07:55:47 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jun 2025 08:34:05 +0000</lastBuildDate>
     <item>
-      <title>🟢 News Publisher: Issue (resolved)</title>
+      <title>🟢 News Publisher: Operational</title>
       <link>https://developer.apple.com/news-publisher/</link>
-      <description>Started: 06/24/2025 14:29 PDT
+      <description>✅ News Publisher is operating normally
 
-Ended: 06/24/2025 17:00 PDT
-
-Users experienced a problem with this service.
-
-Some users were affected
-
-Affected Services: Apple News API, News Publisher</description>
-      <guid isPermaLink="false">News Publisher-1000004966-1750800540000</guid>
-      <pubDate>Thu, 26 Jun 2025 18:00:00 -0700</pubDate>
+No current issues reported</description>
+      <guid isPermaLink="false">News Publisher-operational-1751013245806</guid>
+      <pubDate>Fri, 27 Jun 2025 01:34:05 -0700</pubDate>
     </item>
   </channel>
 </rss>
