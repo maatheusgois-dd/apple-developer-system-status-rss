@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Jun 2025 06:58:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jun 2025 07:27:52 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Music Classical: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Apple Music Classical is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Music Classical-operational-1751007513331</guid>
-      <pubDate>Thu, 26 Jun 2025 23:58:33 -0700</pubDate>
+      <guid isPermaLink="false">Apple Music Classical-operational-1751009272809</guid>
+      <pubDate>Fri, 27 Jun 2025 00:27:52 -0700</pubDate>
     </item>
   </channel>
 </rss>
