@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Jun 2025 07:27:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jun 2025 07:43:23 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Arcade: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Apple Arcade is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Arcade-operational-1751009272806</guid>
-      <pubDate>Fri, 27 Jun 2025 00:27:52 -0700</pubDate>
+      <guid isPermaLink="false">Apple Arcade-operational-1751010203732</guid>
+      <pubDate>Fri, 27 Jun 2025 00:43:23 -0700</pubDate>
     </item>
   </channel>
 </rss>
