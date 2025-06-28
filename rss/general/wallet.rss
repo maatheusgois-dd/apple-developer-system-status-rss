@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Jun 2025 13:52:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2025 14:20:16 +0000</lastBuildDate>
     <item>
       <title>🟢 Wallet: Operational</title>
       <link>https://developer.apple.com/apple-pay/</link>
       <description>✅ Wallet is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Wallet-operational-1751118750378</guid>
-      <pubDate>Sat, 28 Jun 2025 06:52:30 -0700</pubDate>
+      <guid isPermaLink="false">Wallet-operational-1751120416009</guid>
+      <pubDate>Sat, 28 Jun 2025 07:20:16 -0700</pubDate>
     </item>
   </channel>
 </rss>
