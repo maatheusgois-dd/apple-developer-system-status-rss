@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Jun 2025 07:40:32 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2025 07:52:48 +0000</lastBuildDate>
     <item>
       <title>🟢 Device Enrollment Program: Operational</title>
       <link>https://developer.apple.com/system-status/</link>
       <description>✅ Device Enrollment Program is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Device Enrollment Program-operational-1751096432143</guid>
-      <pubDate>Sat, 28 Jun 2025 00:40:32 -0700</pubDate>
+      <guid isPermaLink="false">Device Enrollment Program-operational-1751097168106</guid>
+      <pubDate>Sat, 28 Jun 2025 00:52:48 -0700</pubDate>
     </item>
   </channel>
 </rss>
