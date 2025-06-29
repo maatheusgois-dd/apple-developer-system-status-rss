@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Jun 2025 07:25:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jun 2025 07:40:55 +0000</lastBuildDate>
     <item>
       <title>🟢 Tap to Pay on iPhone: Operational</title>
       <link>https://developer.apple.com/system-status/</link>
       <description>✅ Tap to Pay on iPhone is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Tap to Pay on iPhone-operational-1751181906116</guid>
-      <pubDate>Sun, 29 Jun 2025 00:25:06 -0700</pubDate>
+      <guid isPermaLink="false">Tap to Pay on iPhone-operational-1751182855926</guid>
+      <pubDate>Sun, 29 Jun 2025 00:40:55 -0700</pubDate>
     </item>
   </channel>
 </rss>

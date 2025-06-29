@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Jun 2025 07:25:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jun 2025 07:40:55 +0000</lastBuildDate>
     <item>
       <title>🟢 HomeKit Secure Video: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ HomeKit Secure Video is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">HomeKit Secure Video-operational-1751181906127</guid>
-      <pubDate>Sun, 29 Jun 2025 00:25:06 -0700</pubDate>
+      <guid isPermaLink="false">HomeKit Secure Video-operational-1751182855936</guid>
+      <pubDate>Sun, 29 Jun 2025 00:40:55 -0700</pubDate>
     </item>
   </channel>
 </rss>
