@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Jun 2025 14:55:24 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jun 2025 15:23:34 +0000</lastBuildDate>
     <item>
       <title>🟢 Mac App Store: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Mac App Store is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Mac App Store-operational-1751208924104</guid>
-      <pubDate>Sun, 29 Jun 2025 07:55:24 -0700</pubDate>
+      <guid isPermaLink="false">Mac App Store-operational-1751210614775</guid>
+      <pubDate>Sun, 29 Jun 2025 08:23:34 -0700</pubDate>
     </item>
   </channel>
 </rss>
