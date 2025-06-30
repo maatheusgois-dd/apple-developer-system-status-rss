@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Jun 2025 08:33:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Jun 2025 08:59:04 +0000</lastBuildDate>
     <item>
       <title>🟢 macOS Software Update: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ macOS Software Update is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">macOS Software Update-operational-1751272426277</guid>
-      <pubDate>Mon, 30 Jun 2025 01:33:46 -0700</pubDate>
+      <guid isPermaLink="false">macOS Software Update-operational-1751273944711</guid>
+      <pubDate>Mon, 30 Jun 2025 01:59:04 -0700</pubDate>
     </item>
   </channel>
 </rss>
