@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jul 2025 04:40:37 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 05:02:23 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Fitness+: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Apple Fitness+ is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Fitness+-operational-1751344837714</guid>
-      <pubDate>Mon, 30 Jun 2025 21:40:37 -0700</pubDate>
+      <guid isPermaLink="false">Apple Fitness+-operational-1751346143228</guid>
+      <pubDate>Mon, 30 Jun 2025 22:02:23 -0700</pubDate>
     </item>
   </channel>
 </rss>
