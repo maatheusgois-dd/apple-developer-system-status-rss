@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jul 2025 10:49:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 11:21:02 +0000</lastBuildDate>
     <item>
       <title>🟢 iCloud Calendar: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ iCloud Calendar is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">iCloud Calendar-operational-1751366992374</guid>
-      <pubDate>Tue, 01 Jul 2025 03:49:52 -0700</pubDate>
+      <guid isPermaLink="false">iCloud Calendar-operational-1751368862989</guid>
+      <pubDate>Tue, 01 Jul 2025 04:21:02 -0700</pubDate>
     </item>
   </channel>
 </rss>
