@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 10:49:22 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 11:21:13 +0000</lastBuildDate>
     <item>
       <title>🟢 Podcasts: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Podcasts is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Podcasts-operational-1751453362015</guid>
-      <pubDate>Wed, 02 Jul 2025 03:49:22 -0700</pubDate>
+      <guid isPermaLink="false">Podcasts-operational-1751455273754</guid>
+      <pubDate>Wed, 02 Jul 2025 04:21:13 -0700</pubDate>
     </item>
   </channel>
 </rss>
