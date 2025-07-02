@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 12:51:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 13:35:39 +0000</lastBuildDate>
     <item>
       <title>🟢 Videos: Operational</title>
       <link>https://developer.apple.com/videos/</link>
       <description>✅ Videos is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Videos-operational-1751460666629</guid>
-      <pubDate>Wed, 02 Jul 2025 05:51:06 -0700</pubDate>
+      <guid isPermaLink="false">Videos-operational-1751463339950</guid>
+      <pubDate>Wed, 02 Jul 2025 06:35:39 -0700</pubDate>
     </item>
   </channel>
 </rss>
