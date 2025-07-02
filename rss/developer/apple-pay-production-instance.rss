@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 18:34:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 18:57:44 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Pay Production Instance: Operational</title>
       <link>https://developer.apple.com/apple-pay/</link>
       <description>✅ Apple Pay Production Instance is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Pay Production Instance-operational-1751481257469</guid>
-      <pubDate>Wed, 02 Jul 2025 11:34:17 -0700</pubDate>
+      <guid isPermaLink="false">Apple Pay Production Instance-operational-1751482664040</guid>
+      <pubDate>Wed, 02 Jul 2025 11:57:44 -0700</pubDate>
     </item>
   </channel>
 </rss>
