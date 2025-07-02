@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 16:30:45 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 16:58:37 +0000</lastBuildDate>
     <item>
       <title>🟢 Account: Operational</title>
       <link>https://developer.apple.com/account/</link>
       <description>✅ Account is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Account-operational-1751473845342</guid>
-      <pubDate>Wed, 02 Jul 2025 09:30:45 -0700</pubDate>
+      <guid isPermaLink="false">Account-operational-1751475517206</guid>
+      <pubDate>Wed, 02 Jul 2025 09:58:37 -0700</pubDate>
     </item>
   </channel>
 </rss>
