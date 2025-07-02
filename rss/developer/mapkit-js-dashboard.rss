@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 15:46:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 16:30:45 +0000</lastBuildDate>
     <item>
       <title>🟢 MapKit JS Dashboard: Operational</title>
       <link>https://maps.developer.apple.com</link>
       <description>✅ MapKit JS Dashboard is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">MapKit JS Dashboard-operational-1751471213666</guid>
-      <pubDate>Wed, 02 Jul 2025 08:46:53 -0700</pubDate>
+      <guid isPermaLink="false">MapKit JS Dashboard-operational-1751473845404</guid>
+      <pubDate>Wed, 02 Jul 2025 09:30:45 -0700</pubDate>
     </item>
   </channel>
 </rss>
