@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 17:45:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 18:34:17 +0000</lastBuildDate>
     <item>
       <title>🟢 Developer Documentation: Operational</title>
       <link>https://developer.apple.com/reference</link>
       <description>✅ Developer Documentation is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Developer Documentation-operational-1751478336915</guid>
-      <pubDate>Wed, 02 Jul 2025 10:45:36 -0700</pubDate>
+      <guid isPermaLink="false">Developer Documentation-operational-1751481257471</guid>
+      <pubDate>Wed, 02 Jul 2025 11:34:17 -0700</pubDate>
     </item>
   </channel>
 </rss>
