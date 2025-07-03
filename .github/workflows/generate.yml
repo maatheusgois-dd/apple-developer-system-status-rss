@@ -42,10 +42,3 @@ jobs:
             git commit -m "chore: update Apple system status RSS feeds [skip ci]"
             git push
           fi
-
-      - name: Trigger static page deployment
-        if: success()
-        run: |
-          gh workflow run static.yml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
