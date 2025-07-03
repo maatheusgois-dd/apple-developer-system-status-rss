@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 23:56:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Jul 2025 02:11:01 +0000</lastBuildDate>
     <item>
       <title>🟢 BusinessConnect: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ BusinessConnect is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">BusinessConnect-operational-1751500596475</guid>
-      <pubDate>Wed, 02 Jul 2025 16:56:36 -0700</pubDate>
+      <guid isPermaLink="false">BusinessConnect-operational-1751508661292</guid>
+      <pubDate>Wed, 02 Jul 2025 19:11:01 -0700</pubDate>
     </item>
   </channel>
 </rss>
