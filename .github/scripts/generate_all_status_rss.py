@@ -117,14 +117,9 @@ def create_service_feed(service, service_type, base_url=None):
             
             e.description('\n\n'.join(description_parts))
     else:
-        # No events - add a placeholder entry
-        now = datetime.datetime.now(tz=PDT)
-        e = fg.add_entry()
-        e.id(f"{service_name}-operational-{int(now.timestamp() * 1000)}")
-        e.title(f"🟢 {service_name}: Operational")
-        e.link(href=service_url)
-        e.pubDate(now)
-        e.description(f"✅ {service_name} is operating normally\n\nNo current issues reported")
+        # No events - don't create RSS entries for operational services
+        # This prevents spam notifications for services with no issues
+        pass
     
     return fg
 
@@ -160,51 +155,22 @@ def create_aggregate_feed(services, title_suffix, service_type):
                 event_copy['_serviceUrl'] = service.get('redirectUrl') or base_url
                 all_events.append(event_copy)
     
-    # Add operational status for services without events
-    now = datetime.datetime.now(tz=PDT)
+    # Don't add operational status entries to aggregate feeds
+    # This prevents spam from services with no issues
+    # Only real events (outages, issues) will appear in the feed
     
-    for service in services:
-        service_name = service.get('serviceName', 'Unknown Service')
-        if service_name not in services_with_events:
-            # Create a status entry for operational services
-            operational_event = {
-                '_serviceName': service_name,
-                '_serviceUrl': service.get('redirectUrl') or base_url,
-                'messageId': 'operational',
-                'epochStartDate': int(now.timestamp() * 1000),
-                'eventStatus': 'operational',
-                'statusType': 'Operational',
-                'datePosted': now.strftime('%m/%d/%Y %H:%M PDT'),
-                'message': f'Service is operating normally',
-                'usersAffected': None,
-                'affectedServices': None
-            }
-            all_events.append(operational_event)
+    # Sort all events by date (newest first)
+    all_events.sort(key=lambda x: x.get('epochStartDate', 0), reverse=True)
     
-    # Sort all events by date (newest first), but prioritize non-operational events
-    def sort_key(event):
-        # Non-operational events get priority (lower sort value)
-        priority = 0 if event.get('eventStatus') != 'operational' else 1
-        epoch = event.get('epochStartDate', 0)
-        return (priority, -epoch)
-    
-    all_events.sort(key=sort_key)
-    
-    # Limit to reasonable number of entries (recent events + all operational services)
-    # Keep all recent events (non-operational) and up to 50 operational services
-    recent_events = [e for e in all_events if e.get('eventStatus') != 'operational']
-    operational_events = [e for e in all_events if e.get('eventStatus') == 'operational'][:50]
-    all_events = recent_events + operational_events
+    # Limit to reasonable number of recent events (max 100)
+    all_events = all_events[:100]
     
     for event in all_events:
         e = fg.add_entry()
         service_name = event.get('_serviceName', 'Unknown Service')
         
         # Create status emoji based on event status
-        if event.get('eventStatus') == 'operational':
-            status_emoji = "🟢"
-            status_text = "Operational"
-        elif event.get('eventStatus') == 'resolved':
+        if event.get('eventStatus') == 'resolved':
             status_emoji = "🟢"
             status_text = f"{event.get('statusType', 'Issue')} (resolved)"
         elif event.get('eventStatus') == 'ongoing':
@@ -245,25 +211,21 @@ def create_aggregate_feed(services, title_suffix, service_type):
         # Build description
         description_parts = []
         
-        if event.get('eventStatus') == 'operational':
-            description_parts.append(f"✅ {service_name} is operating normally")
-            description_parts.append("No current issues reported")
-        else:
-            if event.get('startDate') and event.get('endDate') and event.get('eventStatus') == 'resolved':
-                description_parts.append(f"Started: {event.get('startDate')}")
-                description_parts.append(f"Ended: {event.get('endDate')}")
-            elif event.get('startDate'):
-                description_parts.append(f"Started: {event.get('startDate')}")
+        if event.get('startDate') and event.get('endDate') and event.get('eventStatus') == 'resolved':
+            description_parts.append(f"Started: {event.get('startDate')}")
+            description_parts.append(f"Ended: {event.get('endDate')}")
+        elif event.get('startDate'):
+            description_parts.append(f"Started: {event.get('startDate')}")
+        
+        if event.get('message'):
+            description_parts.append(event.get('message'))
+        
+        if event.get('usersAffected'):
+            description_parts.append(event.get('usersAffected'))
             
-            if event.get('message'):
-                description_parts.append(event.get('message'))
-            
-            if event.get('usersAffected'):
-                description_parts.append(event.get('usersAffected'))
-                
-            if event.get('affectedServices'):
-                affected = ', '.join(event.get('affectedServices'))
-                description_parts.append(f"Affected Services: {affected}")
+        if event.get('affectedServices'):
+            affected = ', '.join(event.get('affectedServices'))
+            description_parts.append(f"Affected Services: {affected}")
         
         e.description('\n\n'.join(description_parts))
     
@@ -312,18 +274,23 @@ def main():
         developer_services = developer_data.get('services', [])
         print(f"📋 Found {len(developer_services)} developer services")
         
-        # Generate individual feeds for each developer service
+        # Generate individual feeds for each developer service (only if they have events)
         for service in developer_services:
             service_name = service.get('serviceName', 'Unknown Service')
-            print(f"  📄 Generating RSS for {service_name}")
+            events = service.get('events', [])
             
-            fg = create_service_feed(service, 'Developer')
-            filename = f"rss/developer/{sanitize_filename(service_name)}.rss"
-            
-            with open(filename, 'wb') as f:
-                f.write(fg.rss_str(pretty=True))
-            
-            generated_feeds.append(filename)
+            if events:  # Only generate RSS if there are actual events
+                print(f"  📄 Generating RSS for {service_name} ({len(events)} events)")
+                
+                fg = create_service_feed(service, 'Developer')
+                filename = f"rss/developer/{sanitize_filename(service_name)}.rss"
+                
+                with open(filename, 'wb') as f:
+                    f.write(fg.rss_str(pretty=True))
+                
+                generated_feeds.append(filename)
+            else:
+                print(f"  ⏭️  Skipping {service_name} (no events)")
         
         # Generate aggregate developer feed
         print("📄 Generating aggregate developer RSS feed...")
@@ -340,18 +307,23 @@ def main():
         general_services = general_data.get('services', [])
         print(f"📋 Found {len(general_services)} general services")
         
-        # Generate individual feeds for each general service
+        # Generate individual feeds for each general service (only if they have events)
         for service in general_services:
             service_name = service.get('serviceName', 'Unknown Service')
-            print(f"  📄 Generating RSS for {service_name}")
+            events = service.get('events', [])
             
-            fg = create_service_feed(service, 'System')
-            filename = f"rss/general/{sanitize_filename(service_name)}.rss"
-            
-            with open(filename, 'wb') as f:
-                f.write(fg.rss_str(pretty=True))
-            
-            generated_feeds.append(filename)
+            if events:  # Only generate RSS if there are actual events
+                print(f"  📄 Generating RSS for {service_name} ({len(events)} events)")
+                
+                fg = create_service_feed(service, 'System')
+                filename = f"rss/general/{sanitize_filename(service_name)}.rss"
+                
+                with open(filename, 'wb') as f:
+                    f.write(fg.rss_str(pretty=True))
+                
+                generated_feeds.append(filename)
+            else:
+                print(f"  ⏭️  Skipping {service_name} (no events)")
         
         # Generate aggregate general feed
         print("📄 Generating aggregate general RSS feed...")
