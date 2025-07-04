@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Jul 2025 09:30:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 09:52:53 +0000</lastBuildDate>
     <item>
       <title>🟢 Weather: Operational</title>
       <link>https://www.apple.com/support/systemstatus/</link>
       <description>✅ Weather is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Weather-operational-1751621423193</guid>
-      <pubDate>Fri, 04 Jul 2025 02:30:23 -0700</pubDate>
+      <guid isPermaLink="false">Weather-operational-1751622773191</guid>
+      <pubDate>Fri, 04 Jul 2025 02:52:53 -0700</pubDate>
     </item>
   </channel>
 </rss>
