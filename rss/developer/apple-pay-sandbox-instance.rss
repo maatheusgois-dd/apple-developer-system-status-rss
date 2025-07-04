@@ -7,15 +7,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Jul 2025 04:16:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 04:53:59 +0000</lastBuildDate>
     <item>
       <title>🟢 Apple Pay Sandbox Instance: Operational</title>
       <link>https://developer.apple.com/apple-pay/sandbox-testing/</link>
       <description>✅ Apple Pay Sandbox Instance is operating normally
 
 No current issues reported</description>
-      <guid isPermaLink="false">Apple Pay Sandbox Instance-operational-1751602610938</guid>
-      <pubDate>Thu, 03 Jul 2025 21:16:50 -0700</pubDate>
+      <guid isPermaLink="false">Apple Pay Sandbox Instance-operational-1751604839860</guid>
+      <pubDate>Thu, 03 Jul 2025 21:53:59 -0700</pubDate>
     </item>
   </channel>
 </rss>
