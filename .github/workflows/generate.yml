@@ -1,9 +1,9 @@
 name: Generate Apple System Status RSS Feeds
 
-on:
-  schedule:
-    - cron: '*/15 * * * *'   # every 15 minutes
-  workflow_dispatch:       # manual trigger
+# on:
+#   schedule:
+#     - cron: '*/15 * * * *'   # every 15 minutes
+#   workflow_dispatch:       # manual trigger
 
 permissions:
   contents: write
